@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #one{
+        text-align:center;
+        padding: 20%;
+        background-color:#141f1f ;
+    }
+    *{
+        padding: 0;
+        margin:0;
+        text-decoration: none;
+        box-sizing:border-box;
+    }
+    body{
+        font-family: Helvetica;
+    }
+    nav{
+        background: #466d6d;
+        height: 80px;
+        width: 100%;
+    }
+    label.logo{
+        color:black;
+        font-size:35px;
+        line-height: 80px;
+        padding: 0 100px;
+        font-weight:bold;
+    }
+    nav ul{
+        float:right;
+        margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color:white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius:3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background:rgb(159, 81, 161);
+    transition:.5s;
+
+}
+#two{
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:20px;
+    text-align:center;
+    color: white;
+    background-color: #5a8c8c ;
+}
+button{
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 3, 37);
+    background-color: rgb(116, 96, 163);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+#three{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color:#1e2f2f;
+color:white;
+}
+form{
+    background-color:#1e2f2f ;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align:center;
+}
+#a{
+    background-color: rgb(75, 185, 75);
+    border-radius: 5px;
+    padding: 10px 20px;
+    background:  #7d8181 ;
+}
+label{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    align:center;
+    padding:10px 20px;
+    margin:0 5px;
+}
+figure{
+    background-color:  #5a8c8c;
+}
+#four{
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:"center";
+    background-color:#1e2f2f ;
+    color:white;
+}
+footer{
+    background-color:  #5a8c8c ;
+    color: white;
+font-family: sans-serif;
+padding:20px;
+
+}
+input[type="checkbox"]{
+    align:"center";
+    padding:10px;
+    margin:5px;
+    
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  width:70px;
+  height:30px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  width:70px;
+  height:30px;
+}
+
+.fa-github{
+    background:#009900 ;
+    color: #ffffff;
+    width:70px;
+  height:30px;
+    }
+
+.fa-phone{
+background: red;
+color: white;
+width:70px;
+  height:30px;
+}
+
+</style>
+</head>
+<body>
+ <nav>
+        <label class="logo"><font face="Helvetica"><i>Mimic</i></font></label>
+        <ul>
+            <li><a class= "active" href="#">About</a> </li>
+            <li><a href="#">Work</a> </li>
+            <li><a href="#">Contact</a> </li>
+            <li><a href="#">Survey</a> </li>
+
+        </ul>
+    </nav>
+    <p id="one">
+        <font size= '30' face='arial' color= '#92b9b9'>Hey! I am mimic</font>
+        <br> <font size='5' face='arial' color= 'crimson'><i>a web developer</i></font>
+    </p>
+    <p id="two">
+        <u>These are some of my projects</u>
+<br>
+<img src= "https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/calc.png?raw=true" height="300px" width="400px">
+
+<img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/map.jpg?raw=true"height="300px" width="400px" >
+
+<img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/random-quote-machine.png?raw=true"height="300px" width="400px" >
+
+<img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/tic-tac-toe.png?raw=true"height="300px" width="400px" >
+
+<img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/tribute.jpg?raw=true"height="300px" width="400px" >
+
+<img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Shambhavi/Task%201/Assets/wiki.png?raw=true"height="300px" width="400px" >
+
+<button><strong>Show all ></strong></button>
+<p id="three">
+    <u>Survey form</u>
+    <br>
+    <font size='3'><i>Thank you for taking the time to help us improve the platform </i></font>
+    </p>
+    <form action="#">
+    <div>
+    <label>Enter name</label>
+        <input type="text" placeholder="Enter your name" id="name" class="name"></div>
+        <div>
+        <label style text-align:"center">Email</label>
+        <input type="text" placeholder ="Enter your email id" id="email" class="number" >
+        </div>
+        <div>
+        <label style text-align:"center">Age</label>
+        <input type="number" placeholder="Enter your age" id="age" class="age"><br></div>
+        <div>
+        <label style text-align:"center">Which option best describes you?</label><br>
+        <input type="text" placeholder="select role" id="select role" class="role" ><br>
+        </div>
+        <div>
+        <label>What would you like to see improved?</label><br>
+    </div>
+        <div>
+        <input type="checkbox" >Front-end projects<br>
+        <input type="checkbox" >Back-end projects <br>
+        <input type="checkbox" >Data Visualisation<br>
+        <input type="checkbox" >Challenges <br>
+        <input type="checkbox" >Open source community<br>
+        <input type="checkbox" >Gitter help rooms <br>
+        <input type="checkbox" >Videos <br>
+        <input type="checkbox" >City meetups <br>
+        <input type="checkbox" >Wiki <br>
+        <input type="checkbox" >Forum <br>
+        <input type="checkbox" >Additional courses<br>
+        <label>Any comments or suggestions?</label>
+    <input type="text" placeholder="Enter your comment here..." id="comment" class="comment"><br>
+    <button id="a" type="button">Submit</button><br>
+        </div>
+</form>
+<p id="four" style align="middle">Let's work together...<br> how do you like your coffee?
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<br>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-github"></a>
+<a href="#" class="fa fa-phone"></a>
+
+</p>
+         <footer>       
+            <p style align="middle"> This is a fake portfolio.The projects given here are not real. Created for web developers.</p>
+            </footer>
+          
+
+
+</body>
+</html>
