@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <a href="#about">m</a>
+        </div>
+        <div class="header-right">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#survey">Survey</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <h1>Hey, I am mimic</h1>
+        <h3>a web developer</h3>
+    </div>
+    <div class="work" id="work">
+        <h1>These are some of my Projects</h1>
+        <div class="card-collector">
+            <div class="card">
+                <img src="Assets\tribute.jpg" alt="tribute">
+                <h4>Tribute Page</h4>
+            </div>
+            <div class="card">
+                <img src="Assets\random-quote-machine.png" alt="random-quote-machine">
+                <h4>Random Quote</h4>
+            </div>
+            <div class="card">
+                <img src="Assets\calc.png" alt="calc">
+                <h4>Js Calc</h4>
+            </div>
+            <br>
+            <div class="card">
+                <img src="Assets\map.jpg" alt="map">
+                <h4>Access Data</h4>
+            </div>
+            <div class="card">
+                <img src="Assets\wiki.png" alt="wiki">
+                <h4>Wikipedia Viewer</h4>
+            </div>
+            <div class="card">
+                <img src="Assets\tic-tac-toe.png" alt="tic-tac-toe">
+                <h4>Tic-Tac-Toe Game</h4>
+            </div>
+        </div>
+        <button class="show">Show all &#10095</button>
+    </div>
+    <div class="survey" id="survey">
+        <h1>Survey Form</h1>
+        <h5>Thank you for taking out your valuable time to fill out the form...</h5>
+        <div class="form">
+            <p>Name:</p>
+            <input type="text" placeholder="Your Name">
+            <p>Age:</p>
+            <input type="number" placeholder="Your Age">
+            <p>E-mail:</p>
+            <input type="mail" placeholder="Your Email(optional)">
+            <p>Select your role:</p>
+            <select name="role" id="role" >
+                <option value="select role">Select Role</option>
+                <option value="school-student">School Student</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="phd">Ph. D</option>
+                <option value="professional">Professional</option>
+            </select>
+            <p>Select what you'd like to see improved?</p>
+            <input type="checkbox" name="Front-end" id="checkbox"><p id="option">Front-end</p><br>
+            <input type="checkbox" name="Back-end" id="checkbox"><p id="option">Back-end</p><br>
+            <input type="checkbox" name="Data-visualisation" id="checkbox"><p id="option">Data visualisation</p><br>
+            <p>Any suggestions</p>
+            <textarea name="suggestions" id="suggestions" cols="30" rows="6"></textarea>
+            <input type="submit" id="submit">
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h1>Lets Work Together...</h1>
+        <h4>How do you take your coffee?</h4>
+        <div style="height: 8vh;"></div>
+        <span class="con-links"><a href="#contact"><i class="fab fa-facebook-square"></i> Facebook <br></a></span>
+        <span class="con-links"><a href="#contact"><i class="fab fa-github-square"></i> Github <br></a></span>
+        <span class="con-links"><a href="#contact"><i class="fab fa-twitter"></i> Twitter <br></a></span>
+        <span class="con-links"><a href="#contact"><i class="fas fa-at"></i> Send a mail <br></a></span>
+        <span class="con-links"><a href="#contact"><i class="fas fa-mobile-alt"></i> Call me </a></span>
+        <hr>
+        <p id="left">
+            **This is just a fake portfolio. All the project and details guven are not real.
+        </p>
+        <p id="right">
+            <i class="far fa-copyright"></i> All rights reserved
+        </p>
+    </div>
+</body>
+</html>
