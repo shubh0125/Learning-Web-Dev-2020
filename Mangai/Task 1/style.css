@@ -1,0 +1,155 @@
+body
+{
+    font:normal 16px Arial,Helvetica,sans-serif;
+}
+.nav
+{
+    background-color: brown;
+    color: cornsilk;
+    text-align: right;
+    height: 20px;
+}
+.container
+{
+    width:90%;
+    margin:auto;
+}
+.box-1
+{
+    background-color: #333;
+    color: cornsilk;
+    text-align: center;
+    padding-top: 2em;
+    margin: auto;
+    font-size: 50px;
+}
+.box-2
+{
+    background-color: #333;
+    color: rgb(131, 21, 31);
+    text-align: center;
+    font-size: 25px;
+    height: 200px;
+}
+ .im
+{
+   /* width:26.67%;
+    height:250px;
+    margin:10px;
+    border:1px solid black;
+    padding:5px;
+    float:left;*/
+    margin: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 20%;
+    max-height: 20%;
+    display: block;
+    text-align: center;
+    float: left;
+    background-color: rgba(27, 28, 49, 255);
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    margin: 3vh 0.5%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box-4
+{
+    background-color:grey;
+    color: rgb(131, 21, 31);
+    overflow: hidden;
+    text-align: center;
+}
+button{
+    background-color:rgba(27, 28, 49, 255);
+    color:white;
+    width:15%;
+    height:20%;
+
+}
+img
+{
+    height: 250px;
+    width: 100%;
+}
+
+.desc
+{
+    text-align: center;
+    color: blanchedalmond;
+    width: 100%;
+    margin:5px
+
+}
+main
+{
+
+    background-color:grey;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 100px;
+}
+.box-3
+{
+    background-color:grey;
+    text-align: center;
+    overflow: hidden;
+    color: honeydew;
+    font-size:25px ;
+}
+form{
+    background-color: rgb(21, 36, 48);
+    color: white;
+    font-size:15px;
+    overflow: hidden;
+    padding-left:450px;
+}
+input[type="text"],input[type="email"],input[type="number"],select,textarea{
+    width:100%;
+    padding:10px 10px;
+    margin: 8px 0 px;
+    display: inline-block;
+    border:1px solid #ccc;
+    border-radius:4px ;
+    height:10px;
+    
+}
+.fo{
+    width:50%;
+}
+input[type="submit"]
+{
+        width:100%;
+        padding:12px 20px;
+        margin: 8px 0 px;
+        display: inline-block;
+        border:1px solid #ccc;
+        border-radius:4px ;
+        background-color:#008040;
+
+}
+.iform
+{
+    width: 100%;
+    background-color: rgb(21, 36, 48);
+    color: white;
+    font-size:15px;
+    overflow: hidden;
+}
+.last
+{
+    background-color:rgb(39, 38, 38);
+    color: linen;
+    font-size:15px;
+    text-align: center;
+
+}
+.contact
+{
+    display:block;
+    color: snow;
+}
+a:link{
+    color:white;
+}
