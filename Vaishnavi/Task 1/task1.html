@@ -1,0 +1,248 @@
+\<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  overflow-y:scroll;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  size: 50;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: rgb(69, 69, 78);
+  color: white;
+
+}
+.fa-github {
+  background: rgb(69, 69, 78);
+  color: white;
+  
+}
+.fa-linkedin {
+  background:  rgb(69, 69, 78);
+  color: white;
+
+}
+.fa-twitter {
+  background:  rgb(69, 69, 78);
+  color: white;
+  
+}
+.split {
+  width: 100%;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  
+}
+
+.col1 {
+  height: 100%;
+  top:0%;
+  background-color:#404040;
+}
+
+.col2 {
+  height: 200%;
+  top:100%;
+  background-color:#603ea5;
+}
+.col3{
+  height: 100%;
+    top:300%;
+    background-color: rgb(47, 0, 100);
+}
+.col4{
+  height: 100%;
+    top:400%;
+    background-color: rgb(69, 69, 78);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered1{
+    position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered2{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+}
+.centered4{
+    position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.imag{
+  border-image: 500px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:tomato;
+}
+
+li {
+  float: right;
+  background-color: tomato;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.footer{
+  left: 0;
+  top:500%;
+  height: 12%;
+  width: 100%;
+  background-color:  rgb(69, 69, 78);
+  text-align: center;
+  border-top: 5px solid red;
+
+}
+</style>
+</head>
+<body>
+ 
+  
+<div class="split col1">
+  <ul>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#survey">Survey</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#About">About</a></li>
+  </ul>
+  <div class="centered">
+    <h2 style="font-size:50;">Hey I am Mimic,</h2>
+    <p style="font-size:30;font-style: italic;color: red;">a web developer.</p>
+  </div>
+</div>
+
+<div class="split col2">
+  <div class="centered1">
+    <h1 style="text-decoration: underline;">These are some of my designs</h1>
+    <div class="imag row">
+      <div class="column">
+        <img src= "https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/calc.png?raw=true" height="200px" width="200px">
+      </div>
+      <div class="column">
+        <img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/map.jpg?raw=true"height="200px" width="200px">
+      </div>
+      <div class="column">
+        <img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/random-quote-machine.png?raw=true"height="200px" width="200px">
+      </div>
+      <div class="column">
+        <img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/tic-tac-toe.png?raw=true"height="200px" width="200px">
+      </div>
+      <div class="column">
+        <img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/tribute.jpg?raw=true"height="200px" width="200px">
+      </div>
+      <div class="column">
+        <img src="https://github.com/ADG-VIT/Learning-Web-Dev-2020/blob/master/Vaishnavi/Task%201/Assets/wiki.png?raw=true"height="200px" width="200px">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="split col3">
+    <div class="centered2">
+      <h1 style="text-align: center;">Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+      <form>
+        Name:<br>
+        <input type="text" name="firstname" size="60" value="enter your name">
+        <br><br>
+        Email:<br>
+        <input type="text" name="email" size="60" value="enter your email">
+        <br><br>
+        Age(Optional):<br>
+        <input type="text" name="ahe" size="60" value="age">
+        <br><br>
+        What would tou like to see improved?(check all that apply)<br>
+        <input type="checkbox" value="1">Front-End Projects<br>
+        <input type="checkbox" value="2">Back-End Projects<br>
+        <input type="checkbox" value="3">Data Visualisation<br>
+        <input type="checkbox" value="4">Challenges<br>
+        <input type="checkbox" value="5">Open-Source Community<br>
+        <input type="checkbox" value="6">Wiki<br>
+        <input type="checkbox" value="7">Forum<br><br>
+        Any comments or suggestions?<br><br>
+        <textarea rows="5" cols="60" name="text box" >enter your comments here</textarea>
+        <br>
+        <br>
+        <input type="submit" style="background-color:yellowgreen; width: 450px;">
+      </form>
+    </div>
+  </div>
+  <div class="split col4">
+    <div class="centered">
+      <h1 style="font-size: 50;">Let's work together...</h1>
+      <p style="font-style:italic;font-size:30 ;">how do you like your coffee?</p>
+      <br>
+      <a href="#" class="fa fa-facebook" title="Facebook" ></a>
+      <a href="#" class="fa fa-github" title="GIt"></a>
+      <a href="#" class="fa fa-linkedin" title="LinkedIn"></a>
+      <a href="#" class="fa fa-twitter" title="Twitter"></a>
+    </div>
+  </div>
+  <div class="split footer">
+  <div class="centered">
+    <h3>**This is just a fake portfolio.All the projects and contact details given are not real.              © Created for developers</h3>
+  </div>
+  </div>
+</body>
+</html> 
