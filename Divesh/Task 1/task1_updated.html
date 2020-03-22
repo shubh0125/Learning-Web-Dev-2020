@@ -1,0 +1,305 @@
+\<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  size: 50;
+  width: fit-content;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: rgb(69, 69, 78);
+  color: white;
+
+}
+.fa-github {
+  background: rgb(69, 69, 78);
+  color: white;
+  
+}
+.fa-linkedin {
+  background:  rgb(69, 69, 78);
+  color: white;
+
+}
+.fa-twitter {
+  background:  rgb(69, 69, 78);
+  color: white;
+  
+}
+.split {
+  width: 100%;
+  position:absolute;
+  z-index: 1;
+  top: 0;
+  
+}
+
+.col1 {
+  height: 100%;
+  top:0%;
+  background-color:#404040;
+}
+
+.col2 {
+  height: 100%;
+  top:100%;
+  background-color:#603ea5;
+ 
+}
+.col3{
+  height: 120%;
+    top:200%;
+    background-color: rgb(47, 0, 100);
+}
+.col4{
+  height: 100%;
+    top:310%;
+    background-color: rgb(69, 69, 78);
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered1{
+    position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.centered2{
+    position: absolute;;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+}
+.centered4{
+    position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  
+}
+
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.imag{
+  border-image: 500px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:tomato;
+}
+
+li {
+  float: right;
+  background-color: tomato;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+.footer{
+  left: 0;
+  top:400%;
+  height: 12%;
+  width: 100%;
+  background-color:  rgb(69, 69, 78);
+  text-align: center;
+  border-top: 5px solid red;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 5%;
+  height: 140px;
+  width: 150px;
+  background-color:rgb(69, 69, 78);
+  text-align: center;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  
+
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+  @media screen and (min-width: 1200px) {
+    #card{
+      height: 100px;
+  width: 110px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;}
+}
+
+
+
+</style>
+</head>
+<body>
+ 
+  
+<div class="split col1">
+  <ul>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#survey">Survey</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#About">About</a></li>
+  </ul>
+  <div class="centered">
+    <h2 style="font-size:50;">Hey I am Divesh,</h2>
+    <p style="font-size:30;font-style: italic;color: red;">a web developer.</p>
+  </div>
+</div>
+
+<div class="split col2">
+  <h1 style="text-decoration: underline;text-align: center;">These are some of my designs</h1>
+    <div class="row">
+
+        <div class="card column imag" style="margin-left: 200px;">
+          <img src="calc.png" alt="Avatar" style="width:100%">
+            <h4><b>Calculator</b></h4>  
+      </div>
+      
+        <div class="card column imag">
+          <img src="map.jpg" alt="Avatar" style="width:100%">
+            <h4><b>Map</b></h4>  
+        </div>
+        <div class="card column imag">
+          <img src="random-quote-machine.png" alt="Avatar" style="width:100%">
+            <h4><b>Random Quote Machine</b></h4>  
+        </div>                                                                                            
+    </div>
+    <div class="row">
+      <div class="card column imag" style="margin-left: 200px;">
+        <img src="tic-tac-toe.png" alt="Avatar" style="width:100%">
+          <h4><b>Tic-Tac-Toe</b></h4>  
+    </div>
+    
+      <div class="card column imag">
+        <img src="tribute.jpg" alt="Avatar" style="width:100%">
+          <h4><b>Tribute</b></h4>  
+      </div>
+      <div class="card column imag">
+        <img src="wiki.png" alt="Avatar" style="width:100%">
+          <h4><b>Wiki</b></h4>  
+      </div>   
+
+    </div>
+    
+
+   
+    
+
+
+</div>
+<div class="split col3">
+    <div class="centered2">
+      <h1 style="text-align: center;">Survey Form</h1>
+      <p>Thank you for taking the time to help us improve the platform</p>
+      <form>
+        Name:<br>
+        <input type="text" name="firstname" size="60" value="enter your name">
+        <br><br>
+        Email:<br>
+        <input type="email" name="email"  value="enter your email" size="60">
+        <br><br>
+        Age(Optional):<br>
+        <input type="number" name="ahe" value="age" style="width: 420">
+        <br><br>
+        Which option best describes your current role?<br>
+        <select id="role" name="roles" value="Select one option." style="width: 420;">
+          <option value="frontend">Frontend developer</option>
+          <option value="backend">backend developer</option>
+          <option value="DataS">Data Analyst</option>]'
+          '
+        </select>
+        <br><br>
+        What would tou like to see improved?(check all that apply)<br>
+        <input type="checkbox" name="frontend" value="1">Front-End Projects<br>
+        <input type="checkbox" name="backend" value="2">Back-End Projects<br>
+        <input type="checkbox" name="data" value="3">Data Visualisation<br>
+        <input type="checkbox" name="challenge" value="4">Challenges<br>
+        <input type="checkbox" name="open" value="5">Open-Source Community<br>
+        <input type="checkbox" name="wiki" value="6">Wiki<br>
+        <input type="checkbox" name="forum" value="7">Forum<br><br>
+        Any comments or suggestions?<br><br>
+        <textarea rows="5" cols="60" name="text box" >enter your comments here</textarea>
+        <br>
+        <br>
+        <input type="submit" style="background-color:yellowgreen; width: 450px;">
+      </form>
+    </div>
+  </div>
+  <div class="split col4">
+    <div class="centered">
+      <h1 style="font-size: 50;">Let's work together...</h1>
+      <p style="font-style:italic;font-size:30 ;">how do you like your coffee?</p>
+      <br>
+      <a href="#" class="fa fa-facebook" title="Facebook"><span> Facebook</span></a>
+      <a href="#" class="fa fa-github" title="GIt"><span> Github</span></a>
+      <a href="#" class="fa fa-linkedin" title="LinkedIn"><span> LinkedIn</span></a>
+      <a href="#" class="fa fa-twitter" title="Twitter"><span> Twitter</span></a>
+    </div>
+  </div>
+  <div class="split footer">
+  <div class="centered">
+    <h3>Created for developers</h3>
+  </div>
+  </div>
+</body>
+</html> 
