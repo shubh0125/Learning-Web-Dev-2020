@@ -1,0 +1,169 @@
+#one{
+    text-align:center;
+    padding: 20%;
+    background-color:#141f1f ;
+}
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    box-sizing:border-box;
+}
+body{
+    font-family: Helvetica;
+}
+nav{
+    background: #466d6d;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color:black;
+    font-size:35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight:bold;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+display: inline-block;
+line-height:80px;
+margin: 0 5px;
+}
+nav ul li a{
+color:white;
+font-size: 17px;
+padding: 7px 13px;
+border-radius:3px;
+text-transform: uppercase;
+}
+a.active,a:hover{
+background:rgb(159, 81, 161);
+transition:.5s;
+
+}
+#two{
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+padding:20px;
+text-align:center;
+color: white;
+background-color: #5a8c8c ;
+}
+button{
+font-size: medium;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(37, 3, 37);
+background-color: rgb(116, 96, 163);
+border-radius: 15px;
+padding: 10px 20px;
+}
+#three{
+font-size: 50px;
+font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+background-color:#1e2f2f;
+color:white;
+}
+form{
+background-color:#1e2f2f ;
+color:white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align:center;
+}
+#a{
+background-color: rgb(75, 185, 75);
+border-radius: 5px;
+padding: 10px 20px;
+background:  #7d8181 ;
+}
+label{
+font-size: 18px;
+font-family: 'Times New Roman', Times, serif;
+align:center;
+padding:10px 20px;
+margin:0 5px;
+}
+figure{
+background-color:  #5a8c8c;
+}
+#four{
+font-size:25px;
+font-family: 'Times New Roman', Times, serif;
+text-align:"center";
+background-color:#1e2f2f ;
+color:white;
+}
+footer{
+background-color:  #5a8c8c ;
+color: white;
+font-family: sans-serif;
+padding:20px;
+
+}
+input[type="checkbox"]{
+align:"center";
+padding:10px;
+margin:5px;
+
+}
+.fa-facebook {
+background: #3B5998;
+color: white;
+width:70px;
+height:30px;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+width:70px;
+height:30px;
+}
+
+.fa-github{
+background:#009900 ;
+color: #ffffff;
+width:70px;
+height:30px;
+}
+
+.fa-phone{
+background: red;
+color: white;
+width:70px;
+height:30px;
+}
+.card{
+text-align:"center";
+background-color: #5a8c8c ;
+font-family: Arial, Helvetica, sans-serif;
+}
+.flex-container{
+    display:flex;
+    flex-flow:row wrap;
+    height:33%;
+    width: 33%;
+    text-align:"center";
+}
+.column{
+    float:left;
+    width:33%;
+    padding:10px;
+}
+.row{
+    margin:0 -5px;
+}
+#five{
+    background-color:#008080   ;
+}
+.div{
+    width:100%;
+}
+footer{
+    text-align: center;
+}
+
