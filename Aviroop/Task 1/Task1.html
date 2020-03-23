@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>ADG Task 1</title>
+</head>
+<style type = "text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar {
+        background-color: red;
+        height: 10vh;
+        width: 100vw;
+        text-align: right;
+        color: white;
+        font-size: 100%;
+        white-space: pre;
+        font-family: Segoe UI;
+    }
+    .mimic {
+        background-color: #1B1C31;
+        height: 90vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /* position: fixed; */
+        align-items: center;
+        justify-content: center;
+    }
+    .projects {
+        background-color: #266d97;
+        font-family: Segoe UI;
+        color: black;
+        font-size: 100%;
+        height: 80vh;
+        width: 100vw;
+    }
+    .column {
+        float: left;
+        padding: 22px;
+    }
+    .row {
+        margin: 0 -5px;
+    }
+    .row:after {
+        content = "";
+        display: table;
+        clear: both;
+    }
+    .card {
+        width: 30vw;
+        height: 40vh;
+        text-align: center;
+    }
+    .caption {
+        color: white;
+        background-color: black;
+        font-size: 100%;
+        text-align: center;
+        width: 411px;
+        height: 30px;
+    }
+    .survey {
+        background-color: black;
+        height: 140vh;
+        color: white;
+        width: 100vw;
+    }
+    .resizedTextBox1 {
+        width: 650px;
+        height: 25px;
+        padding: 1px;
+    }
+    .resizedTextBox2 {
+        height: 100px;
+        width: 650px;
+        padding: 1px;
+    }
+    .resizedButton {
+        width: 656px;
+        height: 40px;
+        padding: 1px;
+        font-size : 120%;
+    }
+    .finalPage {
+        background-color: #1B1C31;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        /*position: fixed;*/
+        align-items: center;
+        justify-content: center;
+        border-bottom: 3px solid red;
+    }
+    .finalBar {
+        background-color: #1B1C31;
+        text-align: center;
+        color: white;
+        font-size: 100%;
+        height: 10vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        /*position: fixed;*/
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class = "navbar">
+        About     Work     Survey     Contact          
+    </div>
+    <div class = "mimic">
+        <span style = "font-family: Segoe UI; font-size: 450%; color: white;">Hey I am Mimic</span></br>
+        <span style = "font-family: Segoe UI; font-size: 200%; color: red;"><i>a web developer</i></span>
+    </div>
+    <section class = "projects">
+        <h1 style = "text-align: center; color: white; border-bottom: 3px solid white; width: 40%; margin-left: auto; margin-right: auto;"></br>These are some of my projects</h1></br></br>
+        <div class = "row">
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/tribute.jpg" alt = "tribute.jpg" width = 100% height = 120%>
+                    <button class = "caption">Tribute Page</button>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/random-quote-machine.png" alt = "random.jpg" width = "100%" height = "120%" style = "float: left;">
+                    <button class = "caption">Random Quote Machine</button>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/calc.png" alt = "Calculator.jpg" width = "100%" height = "120%">
+                    <button class = "caption">Javascript Calculator</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class = "projects">
+        <div class = "row">
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/map.jpg" alt = "map.jpg" width = 100% height = 120%>
+                    <button class = "caption">Map data across the globe</button>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/wiki.png" alt = "wiki.jpg" width = "100%" height = "120%" style = "float: left;">
+                    <button class = "caption">Wikipedia Viewer</button>
+                </div>
+            </div>
+            <div class = "column">
+                <div class = "card">
+                    <img src = "https://raw.githubusercontent.com/ADG-VIT/Learning-Web-Dev-2020/master/Aviroop/Task%201/Assets/tic-tac-toe.png" alt = "ttt.jpg" width = "100%" height = "120%">
+                    <button class = "caption">Tic Tac Toe Game</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class = "survey">
+        <h1 style = "text-align: center;"></br>Survey Form</h1>
+        <h4 style = "text-align: center;"></br><i>Thank you for taking the time to help us improve the platform</i></br></br></h4>
+        <form action = "#" style = "">
+            <h4>Name:</h4>
+            <input type = "text" placeholder = "Enter your name" class = "resizedTextBox1"></br></br>
+            <h4>Email:</h4>
+            <input type = "text" placeholder = "Enter your email id" class = "resizedTextBox1"></br></br>
+            <h4>Age(optional):</h4>
+            <input type = "number" placeholder = "Age" class = "resizedTextBox1"></br></br>
+            <h4>What best describes your current role?</h4>
+            <input type = "text" placeholder = "Enter your answer" class = "resizedTextBox1"></br></br>
+            <h4>What would you like to see improved?(Check all that apply)</h4>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 1">Front-end Projects</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 2">Back-end Projects</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 3">Data Visualisation</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 4">Challenges</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 5">Open Source Community</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 6">Glitter Help Rooms</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 6">Glitter Help Rooms</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 7">Videos</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 8">City Meetups</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 9">Wiki</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 9">Wiki</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 10">Forums</br>
+            <input style = "text-align: justify;" type = "checkbox" name = "Box 11">Additional Courses</br></br>
+            <h4>Any comments or suggestions?</h4>
+            <input type = "text" placeholder = "Enter your comments here..." class = "resizedTextBox2"></br></br>
+            <button style = "background-color: limegreen; color: white;" class = "resizedButton">Submit</button>
+        </form>
+    </div>
+    <div class = "finalPage">
+        <span style = "font-family: Segoe UI; font-size: 450%; color: white;">Let's work together...</span>
+        <span style = "font-family: Segoe UI; font-size: 200%; color: white; text-align: center;"><i> how do you take your coffee?</i></br></br>
+        <span><img src = "https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" width = "50px" height = "50px"> Facebook <img src = "https://cdn.iconscout.com/icon/free/png-256/github-153-675523.png" width = "50px" height = "50px"> Github <img src = "https://image.flaticon.com/icons/svg/60/60580.svg" width = "45px" height = "45px"> Twitter <img src = "https://webstockreview.net/images/clipart-phone-solid-thing-5.png" width = "40px" height = "50px"> Call us</span>
+    </div>
+    <div class = "finalBar">
+        <span>**This is just a fake portfolio. All the projects and contact details given are not real.</span>
+        <span>&#169 Created for web Developers.</span>
+    </div>
+</body>
+</html>
