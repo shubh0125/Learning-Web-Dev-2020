@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: lightslategray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: lightsteelblue;
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width:400px;
+    max-width:100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.header{
+    background-color: lightsteelblue;
+    border-bottom: 1px;
+    padding: 20px 40px;
+}
+.header h2{
+    margin:0;
+}
+.form{
+    padding: 30px 40px;
+
+}
+.form-feature{
+    margin-bottom: 10px;
+    padding-bottom:20px;
+    position:relative;
+
+
+}
+.form-feature label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-feature input{
+    border:2px;
+    border-radius: 4px;
+    display: block;
+    font-family:inherit;
+    font-size: 14px;
+    padding:10px;
+    width:100%;
+}
+.form-feature.success input{
+    border-color: green;
+}
+.form-feature.error input{
+    border-color: red;
+}
+.form-feature i{
+    position: absolute;
+    top:40px;
+    right:10px;
+    visibility: hidden;
+}
+.form-feature.success i.fa-check-circle{
+    color:green;
+    visibility: visible;
+}
+.form-feature.error i.fa-exclaimation-circle{
+    color:red;
+    visibility: visible;
+}
+.form-feature.error small{
+    color:red;
+    visibility: visible;
+}
+.form-feature small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+.form button{
+    background-color: mediumpurple;
+    border: 2px;
+    border-radius: 4px;
+    color:black;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    ;
+}
