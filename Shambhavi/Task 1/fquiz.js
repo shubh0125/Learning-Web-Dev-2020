@@ -59,7 +59,7 @@ function checkInputs(){
 
  function setSuccessFor(input) {
      const formFeature = input.parentElement;
-     formControl.className = 'form-feature success';
+     formFeature.className = 'form-feature success';
  }
   function isEmail(email){
       return/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue)
