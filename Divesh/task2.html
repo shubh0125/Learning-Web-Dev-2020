@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="task2.css">
+    <title>task2</title>
+</head>
+
+<body id="body">
+    <form id="myform" class="container" >
+        <h1 style="font-family: 'Bungee Shade';text-align: center; font-size: 400%;color:lemonchiffon">Quiz It!</h1>
+        <h1 style="text-align: center;color: cornsilk;">Sign up</h1>
+        First Name:<br>
+        <input type="text" id="fname" name="name" placeholder="First Name" required>
+        <br>
+        Last Name:<br>
+        <input type="text" id="lname" name="last_name" placeholder="Last Name" required>
+        <br>
+        Email:<br>
+        <input type="email" id="email" name="email" placeholder="xyz@abc.com" required>
+        <br>
+        Phone Number:<br>
+        <input type="tel" id="pnumber" name="phone" placeholder="Mobile Number" required>
+        <br>
+        Username:<br>
+        <input type="text" id="username" name="username" placeholder="Username" required>
+        <br>
+        Password:<br>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br><br>
+        <input type="button" class="button1" id="submitb" name="Submit" value="Submit" onclick="checkform()">
+        <input type="reset" class="button2" value="Clear Form">
+    </form>
+<div id="quiz" style="display: none;">
+    <div id="question" class="qcontainer"><p>Question</p></div>
+    <div id="choices" >
+        <div class="choice btn" id="a" onclick="checkanswer('a')">A</div>
+        <div class="choice btn" id="b" onclick="checkanswer('b')">B</div>
+        <div class="choice btn" id="c" onclick="checkanswer('c')">C</div>
+        <div class="choice btn" id="d" onclick="checkanswer('d')">D</div>
+    </div>
+    <div id="timer">
+        <div id="counter" class="timercontainer">60</div>
+    </div>
+</div>
+    <div id="scorecontainer" style="display: none;" >
+        <div id="score1" class="scorecontainer">
+
+        </div>
+        <br><br>
+        
+        <button class="rsbtn" id="reset" onclick="reset()"><strong>Reset</strong></button>
+    
+    </div>
+
+</body>
+<script src="task2.js"></script>
+</html>
