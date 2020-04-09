@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>BTS!</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>Hey!! This is a quiz on BTS!</h1>
+
+
+<form id = "quiz" name = "quiz">
+<div class="time">
+     <p id= "timer1"></p>
+</div>
+
+<p class = "questions">What is the full form of BTS?</p>
+
+<input type = "radio" id = "mc" name = "question1" value = "Behind the scenes"> Behind the scenes<br>
+<input type = "radio" id = "mc" name = "question1" value = "Back The Stage"> Back The Stage<br>
+<input type = "radio" id = "mc" name = "question1" value = "Beyond The Scene"> Beyond The Scene<br>
+<input type = "radio" id = "mc" name = "question1" value = "None"> None<br>
+
+<p class = "questions">How many members does the band have?</p>
+<input type = "radio" id = "mc" name = "question2" value = "10"> 10<br>
+<input type = "radio" id = "mc" name = "question2" value = "5"> 5<br>
+<input type = "radio" id = "mc" name = "question2" value = "7"> 7<br>
+<input type = "radio" id = "mc" name = "question2" value = "None">None<br>
+
+<p class = "questions">When did the band debut?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "2019"> 2019<br>
+<input type = "radio" id = "mc" name = "question3" value = "2013"> 2013<br>
+<input type = "radio" id = "mc" name = "question3" value = "2016"> 2016<br>
+<input type = "radio" id = "mc" name = "question3" value = "2020"> 2020<br>
+
+<p class = "questions">Where is the band from?</p>
+
+<input type = "radio" id = "mc" name = "question4" value = "Japan"> Japan<br>
+<input type = "radio" id = "mc" name = "question4" value = "South Korea"> South Korea<br>
+<input type = "radio" id = "mc" name = "question4" value = "China"> China<br>
+<input type = "radio" id = "mc" name = "question4" value = "Taiwan"> Taiwan<br>
+
+<p class = "questions">Which was the first International Award that BTS won that brought it recognition?</p>
+
+<input type = "radio" id = "mc" name = "question5" value = "Billboard Music Award"> Billboard Music Award<br>
+<input type = "radio" id = "mc" name = "question5" value = "American Music Award">American Music Award <br>
+<input type = "radio" id = "mc" name = "question5" value = "People's Choice Award"> People's Choice Award<br>
+<input type = "radio" id = "mc" name = "question5" value = "Grammy">Grammy <br>
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<p id="end"></p>
+<button id= "retake"><a href="fquiz.html">Retake</a></button>
+</div>
+</html>
+
+</body>
