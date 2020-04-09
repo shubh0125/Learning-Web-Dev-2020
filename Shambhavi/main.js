@@ -62,7 +62,7 @@ var xx = setInterval('timer()', 1000);
  function y(){
      clearInterval(xx);
  }
- setTimeout('y()',12000);
+ setTimeout('y()',60000);
 
  function openwindow() 
  { 
