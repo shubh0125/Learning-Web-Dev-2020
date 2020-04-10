@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="form">
+        <div id="rules">
+        <h1> Rules </h1>
+            <ul class="rules">
+                <li>There are a total of <b>5 questions</b>.</li>
+                <li><b>Only one</b> out of the four options is correct.</li>
+                <li>You will get <b>10 seconds</b> for each question.</li>
+            </ul>
+        </div>
+        <div class="start" id="start">
+            <button> Start Quiz </button>
+        </div>
+        <div id="quiz" style="display: none">
+            <h1><div id="question"></div></h1>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none">
+            <a href="index.html">
+                <button class="try"> Didn't Score Much? <br> Try Again !! </button>
+            </a>
+        </div>   
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

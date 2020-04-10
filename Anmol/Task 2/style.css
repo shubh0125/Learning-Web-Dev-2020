@@ -1,0 +1,288 @@
+body{
+    background: #EAE7DC;
+}
+/* FORM STYLE */
+
+.form{
+    width: 45%;
+	padding:30px;
+	margin:40px auto;
+	background: rgba(255, 255, 255, 0.87);
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+@media only screen and (max-width: 750px) {
+    .form{
+        width: 70%;
+    }
+}
+
+.form .inner{
+	padding: 5px;
+	margin-bottom: 15px;
+}
+.form h1{
+	background: #E85A4F;
+	padding: 20px 30px 15px 30px;
+	margin: -30px -30px 30px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #E85A4F;
+}
+.form h1 > span{
+	display: block;
+	margin-top: 2px;
+	font: 13px Arial, Helvetica, sans-serif;
+}
+
+.form input[type="text"],
+.form input[type="tel"],
+.form input[type="email"],
+.form input[type="password"]
+{
+	display: block;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 8px;
+	border-radius: 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border: 2px solid #fff;
+	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form .section{
+	font: normal 20px 'Bitter', serif;
+	color: black;
+	margin-bottom: 5px;
+}
+.form .section span {
+	background: #E98074;
+	padding: 5px 10px 5px 10px;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border: 4px solid #fff;
+	font-size: 14px;
+	margin-left: -45px;
+	color: #fff;
+	margin-top: -3px;
+}
+.form button{
+	background: #E85A4F;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #E85A4F;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* FORM STYLE ENDS */
+
+
+/* RULES STYLE */
+ul.rules li{
+    font: normal 15px 'Bitter', serif;
+}
+
+div.start{
+    left: 80%;
+    position: relative;
+}
+
+@media only screen and (max-width: 750px){
+    div.start{
+        left: 30%;
+        position: relative;
+    }
+}
+
+
+.start button{
+    background: #E85A4F;
+	padding: 8px 20px 8px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 30px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: 1px solid #E85A4F;
+    font-size: 15px;
+    cursor: pointer;
+}
+/* RULES STYLE ENDS */
+
+
+
+/* QUES STYLE */
+#question h1{
+	background: #E85A4F;
+	padding: 20px 30px 15px 30px;
+	margin: -20px -30px 0px -30px;
+	border-radius: 10px 10px 0 0;
+	-webkit-border-radius: 10px 10px 0 0;
+	-moz-border-radius: 10px 10px 0 0;
+	color: white;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+	font: normal 20px 'Bitter', serif;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+	border: none;
+}
+
+#choices{
+    width : 100%;
+    position: relative;
+    left: 20%;
+	padding : 10px;
+	display: inline;
+}
+.choice{
+	display: inline;
+    width : 20%;
+    text-align: center;
+    border : 1px solid #E85A4F;
+    border-radius: 5px;
+    cursor: pointer;
+	padding : 5px;
+	font: normal 15px 'Bitter', serif;
+}
+
+@media only screen and (max-width: 750px){
+	#choices{
+		left: 20%;
+		display: inline-block;
+	}
+	.choice{
+		display: inline-block;
+		width: 50%;
+	}
+}
+
+.choice:hover{
+    border : 2px solid #E98074	;
+    font-weight: bold;
+}
+
+#timer{
+    position: relative;
+    height : 100px;
+    width : 200px;
+	bottom : -80px;
+	left: 0%;
+    text-align: center;
+}
+#counter{
+    font: normal 45px 'Bitter', serif;
+}
+#btimeGauge{
+    width : 150px;
+    height : 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    margin-left : 25px;
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: #E85A4F;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+#progress{
+    width : 500px;
+    position: relative;
+    bottom : 0px;
+    right : -25%;
+    padding: 5px;
+    text-align: right;
+}
+@media only screen and (max-width: 750px){
+	#progress{
+		width: 100%;
+		bottom: -10%;
+		display: inline-block;
+		margin-top: 30%;
+		left: -15%;
+		right: 0%;
+	}
+	#timer{
+		left: 10%;
+	}
+}
+
+.prog{
+    width : 25px;
+    height : 25px;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left : 5px;
+    margin-right : 5px;
+}
+/* QUES STYLE ENDS */
+
+/* SCORE STYLE */
+#scoreContainer{
+	float: center;
+    background-color: none;
+    height: 300px;
+    width : 100%;
+	position: relative;
+}
+
+#scoreContainer p{
+	float: center;
+	display: inline-block;
+	font: bolder 40px 'Bitter', serif;
+	color: #E85A4F;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	margin-top: -20%;
+}
+
+button.try{
+	display: inline-block;
+	margin-top: -10%;
+	position: relative;
+	float: center;
+	left: 35%;
+	top: 150px;
+}
+@media only screen and (max-width: 750px){
+	button.try{
+		left: 15%
+	}
+}
+
+/* SCORE STYLE ENDS */

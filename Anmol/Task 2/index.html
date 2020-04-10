@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Registration</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="form">
+        <h1>Register for Quiz<span>Enter your details</span></h1>
+        <form id="Register" action="quiz.html">
+            <div class="section"><span>1</span>Name</div>
+            <div class="inner">
+                <input type="text" id="Name" placeholder="Full Name" required>
+            </div>
+
+            <div class="section"><span>2</span>E-Mail ID</div>
+            <div class="inner">
+                <input type="email" id="Mail" placeholder="E-Mail" required>
+            </div>
+
+            <div class="section"><span>3</span>Phone Number</div>
+            <div class="inner">
+                <input type="tel" id="Phone" pattern="[0-9]{10}" placeholder="10 Digits Phone Number only" title="10 digits phone number only" required>
+            </div>
+
+            <div class="section"><span>4</span>Username</div>
+            <div class="inner">
+                <input type="text" id="Username" placeholder="Username" required>
+            </div>
+
+            <div class="section"><span>5</span>Password</div>
+            <div class="inner">
+                <input type="password" id="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            </div>
+
+            <div class="button">
+                <button onclick="register()"> Register </button>  
+            </div>
+        </form>
+    </div>
+<script src="script.js"></script>       
+</body>
+</html>
