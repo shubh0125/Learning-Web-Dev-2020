@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato','Arial','sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+nav {
+    display: flex;
+    height: 8vh;
+    background-color: #bc3838;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 80%;
+}
+
+.main-nav li {
+    list-style: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    margin: 1rem;
+    padding-bottom: 12px;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.main-page {
+    background-image: linear-gradient(90deg,#404040, #171819);
+    height: 100vh;
+}
+
+.main-page h1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.main-page h3 {
+    color: #ca4141;
+    text-align: center;
+    font-size: 80%;
+    font-style: italic;
+}
+
+.projects {
+    background-color: #692def;
+    min-height: 140vh;
+    width: 100wh;
+    color: white;
+}
+
+.projects-heading {
+    text-align: center;
+    padding: 20px;
+}
+
+.underline-heading span {
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.card {
+    height: 360px;
+    width: 340px;
+    background-color: #3b3b3b;
+    margin: 10px;
+}
+
+.card img {
+    height: 320px;
+    width: 340px;
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 80%;
+    padding-top: 3px;
+}
+
+.show {
+    position: absolute;
+    left: 47%; 
+    margin-top: 15px;
+    padding: 14px 20px 14px 20px;
+    background: #3b3b3b ;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    border: #3b3b3b;
+    transition: all 0.2s;
+}
+
+.show:hover {
+    color: #3b3b3b;
+    background: #fff;
+}
+
+.survey-form {
+    background-color: #213041;
+    min-height: 120vh;
+    width: 100wh;
+    text-align: center;
+    color: white;
+    padding: 0 20%;
+}
+
+.form-heading {
+    padding: 20px;
+}
+
+.form-heading h2 {
+    padding-bottom: 5px;
+}
+
+.form-heading h5 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 80%;
+}
+
+.form {
+    text-align: left;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.form p {
+    padding: 1% 0 1% 0;
+}
+
+.form p span{
+    font-size: 60%;
+}
+.form input,
+.form textarea{
+    padding: 0.1% 1%;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    overflow: auto;
+}
+
+.form select {
+    padding: 1%;
+    width:100%;
+    height: fit-content;
+    border-radius: 5px;
+    border: 1px solid gray;    
+}
+
+.form #checkbox{
+    width: 5%;
+}
+
+select {
+    border-radius: 2px;
+}
+
+.form #option{
+    display: inline;
+}
+
+.form #suggestions {
+    width:100%;
+}
+
+#submit {
+    margin: 2% 0;
+    padding: 1% 0;
+    border-radius: 0;
+    background-color: #4caf4c;
+    border: none;
+    color: white;
+    font-size: 110%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#submit:hover {
+    background-color: green;
+}
+
+.contact {
+    background-color: #454545;
+    min-height: 80vh;
+    width: 100wh;
+    text-align: center;
+    color: white;
+}
+
+.contact-heading {
+    padding-top: 17%;
+    padding-bottom: 3%;
+}
+
+.contact-heading h2 {
+    padding-bottom: 5px;
+}
+
+.contact-heading h5 {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 70%;
+}
+
+.social-links {
+    padding-bottom: 2%;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    font-size: 80%;
+    
+}
+
+.social-links li {
+    list-style: none;
+}
+
+.social-links li a {
+    text-decoration: none;
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-github,
+.ion-at,
+.ion-iphone {
+    margin-right: 5px;
+    /*transition: color 0.3s;*/
+}
+
+/*.ion-social-facebook:hover {
+    color: #3b5998;
+}*/
+
+.base {
+    display: flex;
+    margin-top: 7%;
+    font-size: 70%;
+    padding-top: 20px;
+    border-top: 2px solid red;
+}
+
+.left {
+    margin-left: 15%;
+}
+
+.right {
+    margin-left: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

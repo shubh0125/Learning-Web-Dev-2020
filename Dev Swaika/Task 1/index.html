@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ionicons-2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <title>FIRST TASK</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class='navbar'>
+                <ul class='main-nav'>
+                    <li><a href='#'>About</a></li>
+                    <li><a href='#'>Work</a></li>
+                    <li><a href='#'>Survey</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class='main-page'>
+            <h1>Hey I am Mimic</h1>
+            <h3>a web developer</h3>
+        </div>
+    </header>
+    <section class='projects'>
+        <div class='projects-heading'>
+            <h2 class='underline-heading'><span>These are some of my projects</span></h2>
+        </div>
+        <div class='projects-container'>
+            <div class='card'>
+                <img src="Assets/tribute.jpg" alt="Tribute Page">
+                <h4>Tribute Page</h4>
+            </div>
+            <div class='card'>
+                <img src="Assets/random-quote-machine.png" alt="Random Quote Machine">
+                <h4>Random Quote Machine</h4>
+            </div>
+            <div class='card'>
+                <img src="Assets/calc.png" alt="Javascript Calculator">
+                <h4>Javascript Calculator</h4>
+            </div>
+            <div class='card'>
+                <img src="Assets/map.jpg" alt="Map data across the globe">
+                <h4>Map Data Across the Globe</h4>
+            </div>
+            <div class='card'>
+                <img src="Assets/wiki.png" alt="Wikipedia">
+                <h4>Wikipedia Viewer</h4>
+            </div>
+            <div class='card'>
+                <img src="Assets/tic-tac-toe.png" alt="Tic tac toe game">
+                <h4>Tic Tac Toe Game</h4>
+            </div>
+        </div>
+        <div><a class="show" href="#">Show all &rsaquo;</a></div>
+    </section>
+    <section class='survey-form'>
+        <div class='form-heading'>
+            <h2>Survey Form</h2>
+            <h5>Thank you for taking the time to help us improve the platform</h5>
+        </div>
+        <div class='form'>
+            <p>Name</p>
+            <input type="text" placeholder="Enter your name">
+            <p>Age <span>(optional)</span></p>
+            <input type="number" placeholder="Age">
+            <p>E-mail</p>
+            <input type="mail" placeholder="Enter your Email">
+            <p>What option best describes your current role?</p>
+            <select name="role" id="role" >
+                <option value="select role">Select Current Role</option>
+                <option value="school-student">School Student</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="phd">Ph. D</option>
+                <option value="professional">Professional</option>
+            </select>
+            <p>Select what you'd like to see improved? <span>(Check all that apply)</span></p>
+            <input type="checkbox" name="Front-end" id="checkbox"><p id="option">Front-end</p><br>
+            <input type="checkbox" name="Back-end" id="checkbox"><p id="option">Back-end</p><br>
+            <input type="checkbox" name="Data-visualisation" id="checkbox"><p id="option">Data visualisation</p><br>
+            <input type="checkbox" name="challenges" id="checkbox"><p id="option">Challenges</p><br>
+            <input type="checkbox" name="Open-Source-Community" id="checkbox"><p id="option">Open Source Community</p><br>
+            <input type="checkbox" name="Videos" id="checkbox"><p id="option">Videos</p><br>
+            <input type="checkbox" name="City-Meetups" id="checkbox"><p id="option">City Meetups</p><br>
+            <input type="checkbox" name="wiki" id="checkbox"><p id="option">Wiki</p><br>
+            <input type="checkbox" name="Forum" id="checkbox"><p id="option">Forum</p><br>
+            <input type="checkbox" name="Additional-Courses" id="checkbox"><p id="option">Additional Courses</p><br><br>
+            <p>Any comments or suggestions</p>
+            <textarea name="suggestions" id="suggestions" cols="30" rows="6" placeholder="Enter your comment here.."></textarea>
+            <input type="submit" id="submit">
+        </div> 
+    </section>
+    <footer class='contact'>
+        <div class='contact-heading'>
+            <h2>Let's work together..</h2>
+            <h5>How do you take your coffee?</h5>
+        </div>
+        <ul class="social-links">
+            <li><a href='#'><i class='ion-social-facebook'></i>Facebook</a></li>
+            <li><a href='#'><i class='ion-social-github'></i>Github</a></li>
+            <li><a href='#'><i class='ion-social-twitter'></i>Twitter</a></li>
+            <li><a href='#'><i class='ion-at'></i>Send a mail</a></li>
+            <li><a href='#'><i class='ion-iphone'></i>Call me</a></li>
+        </ul>
+        <div class='base'>
+            <p class="left">**This is just a fake portfolio. All the project and details given are not real.</p>
+            <p class="right">&copy;All rights reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
