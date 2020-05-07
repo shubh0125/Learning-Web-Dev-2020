@@ -66,6 +66,7 @@ function dispscore()
    quiz.style.display="none";  
     scorecontainer.style.display="block";
     scoredisp.innerHTML="<p>Your Score:<\p>"+score+"/5";
+    clearTimeout(timer);
      
      
 
