@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task2.css">
+    <title>task2</title>
+</head>
+
+<body id="body">
+    <form id="signup_form" class="container" >
+        <h1>Coronavirus Quiz</h1>
+        <h2>Sign up</h2>
+        First Name:<br>
+        <input type="text" id="first_name" name="name" placeholder="" required>
+        <br>
+        Last Name:<br>
+        <input type="text" id="last_name" name="last_name" placeholder="" required>
+        <br>
+        Email:<br>
+        <input type="email" id="email" name="email" placeholder="" required>
+        <br>
+        Phone Number:<br>
+        <input type="tel" id="phone_number" name="phone" placeholder="" required>
+        <br>
+        Username:<br>
+        <input type="text" id="username" name="username" placeholder="" required>
+        <br>
+        Password:<br>
+        <input type="password" id="password" name="password" placeholder="" required>
+        <br>
+        <h3>Rules:</h3>
+        <ul>
+            <li> There are a total of <strong>5 questions</strong>.</li>
+            <li> <strong>Only one</strong> out of the four options is correct.</li>
+            <li> You will get <strong>10 seconds</strong> for each question.</li>
+        </ul>
+        <br>
+        <input type="button" class="button1" id="submitb" name="Submit" value="Submit" onclick="checkform()">
+        <input type="reset" class="button2" value="Clear">
+    </form>
+    <div id="quiz" style="display: none">
+        <div id="question" class="qcontainer"><p>Question</p></div>
+        <div id="choices" >
+            <div class="choice btn" id="a" onclick="checkanswer('a')">A</div>
+            <div class="choice btn" id="b" onclick="checkanswer('b')">B</div>
+            <div class="choice btn" id="c" onclick="checkanswer('c')">C</div>
+            <div class="choice btn" id="d" onclick="checkanswer('d')">D</div>
+        </div>
+        <div id="timer">
+            <div id="counter" class="timercontainer">10</div>
+        </div>
+    </div>
+    <div id="scorecontainer" class="score" style="display: none" >
+        <div id="score1" class="scorecontainer"></div>
+        <div id='comment' class='comment'></div>
+        <br>
+        <button class="resetbtn" id="reset" onclick="reset()"><strong>Retry</strong></button>
+    </div>
+</body>
+<script src="task2.js"></script>
+</html>
