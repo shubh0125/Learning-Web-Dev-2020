@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        *{
+         box-sizing: border-box;
+        }
+        .navbar {
+            background-color: maroon;
+            height: 45px;
+            overflow: auto;
+            color: white;
+
+        }
+
+        .navbar li {
+            list-style: none;
+            float: right;
+            margin: 5px;
+        }
+
+        .mimic {
+            background-color: rgb(49, 43, 43);
+            height: 600px;
+            color: white;
+            text-align: center;
+        }
+
+        #mimic {
+            padding-top: 250px;
+            font-size: 50px;
+
+        }
+
+        #web {
+            color: maroon;
+            font-size: 30px;
+        }
+
+        .projects {
+            background-color: rgb(46, 46, 85);
+            height: 1150px;
+            text-align: center;
+            color: white;
+            padding-left: 200px;
+            padding-right: 100px;
+            margin-top: 0px;
+        }
+
+        #projects {
+            font-size: 30px;
+            padding-top: 30px;
+            padding-bottom: 70px;
+            text-decoration: underline;
+        }
+
+        img {
+            height: 350px;
+            width: 350px;
+            margin: 10px;
+            margin-bottom: 0px;
+            margin-top: 30px;
+            float: left;
+        }
+
+        #button {
+            background-color: grey;
+            color: white;
+            margin-top: 30px;
+            height: 40px;
+        }
+
+        .form {
+            color: white;
+            background-color: rgb(33, 33, 82);
+            height: 900px;
+
+        }
+
+        #heading {
+            font-size: 60px;
+            text-align: center;
+        }
+
+        #thanks {
+            text-align: center;
+        }
+
+        .f {
+            padding-left: 450px;
+            margin-top: 50px;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        .projects input {
+            margin-top: 30px;
+            margin: auto;
+            width: 200px;
+        }
+
+        #Submit {
+            background-color: green;
+            margin-top: 10px;
+            color: white;
+        }
+
+        #role {
+            color: #999;
+        }
+
+        .select {
+            color: black;
+        }
+
+        .text {
+            background-color: grey;
+            color: white;
+            height: 40px;
+            width: 350px;
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-top: 10px;
+
+        }
+        #endpage{
+            text-align: center;
+            font-size:60px ;
+            padding-top: 300px;
+        }
+        .end{
+            background-color: rgb(69, 69, 92);
+            color: white;
+            height: 1000px;
+            text-align: center;
+        }
+        .e{
+            list-style: none;
+            color: white;
+            font-size: 30px;
+            margin-left: 250px;
+            margin-bottom: 350px;
+          }
+        .e li{
+            float: left;
+            padding:30px;
+        }
+        .ss li{
+            float: left;
+            list-style: none;
+            padding: 10px;
+            padding-right: 350px;
+        }
+        .e img{
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>Contact</li>
+                <li>Survey</li>
+                <li>Work</li>
+                <li>About</li>
+            </ul>
+
+        </nav>
+    </header>
+    <div class="mimic">
+        <p id="mimic"> HEY I AM A MIMIC </p>
+        <span id="web">a web developer</span>
+    </div>
+    <div class="projects">
+        <p id="projects">These are some of my projects</p>
+        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tribute.jpg?raw=true"
+            alt="">
+        <img
+            src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/random-quote-machine.png?raw=true">
+        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/calc.png?raw=true"
+            alt="">
+        <div>
+            <ul>
+                <li class="text" id="1">Tribute Page</li>
+                <li class="text" id="2">Random Quote Machine</li>
+                <li class="text" id="3">JavaScript Calculator</li>
+            </ul>
+        </div>
+        <img src="https://raw.githubusercontent.com/Silvitaneja26/Learning-Web-Dev-2020/master/Silvi/Task%201/Assets/map.jpg"
+            alt="">
+        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/wiki.png?raw=true"
+            alt="">
+        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tic-tac-toe.png?raw=true"
+            alt="">
+        <div>
+            <ul>
+                <li class="text" id="4">Map Data Across the Globe</li>
+                <li class="text" id="5">Wikipedia Viewer</li>
+                <li class="text" id="6">Tic Tac Toe Game</li>
+            </ul>
+        </div>
+        <input id="button" type="button" value="show all >">
+    </div>
+    <div class="form">
+        <div id="heading">Survey Form</div>
+        <p id="thanks">Thankyou for taking the time to help us improve the platform</p>
+        <form class="f">
+            Name <br>
+            <input class="container" type="text" placeholder="enter your name"><br><br>
+            Email <br>
+            <input type="email" class="container" placeholder="enter your email here"><br><br>
+            Age (optional)<br>
+            <input type="text" class="container" placeholder="age"><br><br>
+
+            <div>
+                <label for="currentrole">Which option best describes your current role?</label><br>
+                <select class="container" name="myrole" id="role">
+                    <option value="23" id="role">Select your role</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+
+                </select>
+            </div>
+            What would you like to see improved?(check all that apply) <br>
+            <input type="checkbox">Front-end projects<br>
+            <input type="checkbox">back-end projects<br>
+            <input type="checkbox">Data Visualisation<br>
+            <input type="checkbox">Challenges<br>
+            <input type="checkbox">Open Source Community<br>
+            <input type="checkbox">Gittor Help Rooms<br>
+            <input type="checkbox">Videos<br>
+            <input type="checkbox">City meetups<br>
+            <input type="checkbox">Forums<br>
+            <input type="checkbox">Wiki<br>
+            <input type="checkbox">Additional courses<br>
+            <br><br>
+            Any comments or suggestions?<br>
+            <textarea cols="114" rows="7" placeholder="Enter your suggestions here."></textarea>
+            <input class="container" id="Submit" type="button" value="Submit">
+        </form>
+    </div>
+    <div class="end">
+        <p id="endpage"> Let's Work Together </p>
+        <span id="lastpage">How do you take your coffee?</span>
+        <ul class="e">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6pTOP6zoka03d1DWJRQ2pcDFQIhrXB1i7zVp3aIlnudYmbHpP&usqp=CAU" alt=""> Facebook</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYksPVg7y2R16ltCz1Kqs7GUdnXjCTzpYEE7XmdRSVRXEOt0lH&usqp=CAU" alt=""> Github</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqbrHXPllF6IRseJbxbvwyvOz34DaZiq_sX2i8eCbDOdo5-ObC&usqp=CAU" alt=""> Twitter</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA39CcM4Sab9qoWcrixdd5OxQdXu42xPzhmZoRe9LMQpWkB8Ap&usqp=CAU" alt=""> Send a mail</li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIA_JzVMe9vhkm57rzTAs-Xy8dA6LxtLsuLQqdW9qbfPPWlIHp&usqp=CAU" alt=""> Call me</li>
+
+        </ul>
+        <hr color="maroon" size="5px">
+        <ul class="ss">
+    <li> **This is just a fake portfolio.All the projects and contacts given are not real.</li>
+    <li>Created for Web Developers</li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+</html>
