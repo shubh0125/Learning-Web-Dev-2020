@@ -52,7 +52,7 @@ function dispcart()
     cartlist.forEach(function(x){
       
         
-        code+="<button class='btn btn-danger' onclick='del(this)'  data-name='"+x.name+"' > X </button> <li class='item'> "+x.name+"</li>  <button class='btn as' id='add1' onclick='add(this)' data-name='"+x.name+"' data-price='"+x.price+"'> + </button>   <input type='number' class='quantity'  min='0' value='" +x.count+"'>   <button class='btnas' id='subttract' onclick='removefromcart(this)'  data-name='"+x.name+"'> - </button><br>" ;
+        code+="<button class='btn btn-danger' onclick='del(this)'  data-name='"+x.name+"' > X </button> <li class='item'> "+x.name+"</li>  <button class='btn as' id='add1' onclick='add(this)' data-name='"+x.name+"' data-price='"+x.price+"'> + </button>   <input type='number' class='quantity'  min='0' value='" +x.count+"'>   <button class='btn as' id='subttract' onclick='removefromcart(this)'  data-name='"+x.name+"'> - </button><br>" ;
     
     });
 console.log(code);
