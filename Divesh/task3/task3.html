@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="task3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    <title>Superstore!</title>
+</head>
+<body class="body bgd">
+<div class="container1" id='header'>
+    <h1 id="hd">Superstore!</h1>
+</div>
+<div class="row" id="body">
+    <div class="col">
+        <h1 class="heading">Items for Sale</h1>
+        <div class="row">
+            
+        
+            <div class=" col-md-3 col-sm-6 card">
+                <img src="https://www.bworldonline.com/wp-content/uploads/2018/01/Mango-vector-3.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Mango-₹50</h5>
+                    <button class="btn btn-primary" id="mango" onclick="addtocart('Mango',50,1)">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 card">
+                <img src="https://thumbs.dreamstime.com/b/three-bunches-grapes-hanging-pink-leaves-vector-illustration-seasonal-harvest-wine-making-57708586.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Grapes-₹40</h5>
+                    <button class="btn btn-primary" onclick="addtocart('Grapes',40,1)">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 card" >
+                <img src="https://image.freepik.com/free-vector/orange-fruits-vector_7814-304.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Orange-₹15</h5>
+                    <button class="btn btn-primary" id="orange" onclick="addtocart('Orange',15,1)">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 card">
+                <img src="https://previews.123rf.com/images/slashman/slashman1408/slashman140800109/30793151-kiwi-vector-illustration-fruit-background.jpg">
+                <div class="card-body">
+                    <h5 class="card-title">Kiwi-₹60</h5>
+                    <button class="btn btn-primary " onclick="addtocart('Kiwi',60,1)">Add to cart</button> 
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 card">
+                <img src="https://www.netclipart.com/pp/m/81-814178_bananas-fruit-yellow-banana-png-image-bananas-animated.png">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Banana-₹12</h5>
+                    <button class="btn btn-primary" onclick="addtocart('Banana',12,1)">Add to cart</button>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 card">
+                <img src="https://image.freepik.com/free-vector/apple-icon_22350-9.jpg">
+                <div class="card-body">
+                <h5 class="card-title">Apple-₹25</h5>
+                    <button class="btn btn-primary" onclick="addtocart('Apple',25,1)">Add to cart</button>
+                </div>
+            </div>
+     
+
+
+        </div>
+      
+    
+    
+    </div>
+    <div class="col ">
+        <div class="container">
+            <h1 class="heading">Shopping Cart</h1>
+            <ul class="cart" id="cart">
+            
+            </ul>
+            <h1 class="sum" id="total">Total=  ₹ 0</h1>
+
+        </div>
+   </div>
+   </div>
+
+</body>
+<script src="task3.js"></script>
+</html>
