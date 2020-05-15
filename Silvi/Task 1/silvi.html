@@ -5,225 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
+    <script src="https://kit.fontawesome.com/ea740e4352.js" crossorigin="anonymous"></script>
     <style>
-        *{
-         box-sizing: border-box;
-         margin:0px;
-         padding: 0px;
-        }
-        .navbar {
-            background-color: maroon;
-            height: 45px;
-            overflow: auto;
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
             color: white;
-
         }
 
-        .navbar li {
-            list-style: none;
-            float: right;
-            margin: 5px;
+        .nav {
+            height: 48px;
+            background-color: maroon;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav div {
+            padding: 3px;
+            margin: 5px 15px;
+            font-size: 20px;
         }
 
         .mimic {
-            background-color: rgb(49, 43, 43);
-            height: 600px;
-            color: white;
-            text-align: center;
+            height: 750px;
+            background-color: rgb(41, 40, 40);
         }
 
-        #mimic {
-            padding-top: 250px;
+        .mimic h1 {
+            text-align: center;
+            padding-top: 300px;
             font-size: 50px;
-
+            font-weight: bold;
         }
 
-        #web {
-            color: maroon;
-            font-size: 30px;
-        }
-
-        .projects {
-            background-color: rgb(46, 46, 85);
-            height: 1150px;
+        .mimic p {
             text-align: center;
-            color: white;
-            padding-left: 200px;
-            padding-right: 100px;
-            margin-top: 0px;
+            color: maroon;
+            font-size: 25px;
         }
 
-        #projects {
-            font-size: 30px;
-            padding-top: 30px;
-            padding-bottom: 70px;
+        .project {
+            height: 1230px;
+            background-color: rgb(76, 76, 117);
+
+        }
+
+        .project h1 {
+            text-align: center;
             text-decoration: underline;
+            font-size: 30px;
+            padding-top: 80px;
         }
 
-        img {
+        .images1 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+
+        .img1 img {
             height: 350px;
             width: 350px;
-            margin: 10px;
-            margin-bottom: 0px;
-            margin-top: 30px;
-            float: left;
+
         }
 
-        #button {
-            background-color: grey;
-            color: white;
-            margin-top: 30px;
+        .text1 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text1 div {
             height: 40px;
+            width: 350px;
+            background-color: rgb(49, 41, 41);
+            margin-top: -4px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100px;
+            height: 40px;
+            margin: auto;
+            background-color: rgb(49, 41, 41);
+            margin-top: 60px;
         }
 
         .form {
-            color: white;
-            background-color: rgb(33, 33, 82);
-            height: 880px;
-
+            background-color: rgb(20, 20, 56);
+            height: 900px;
         }
 
         #heading {
+            padding-top: 40px;
             font-size: 60px;
             text-align: center;
-            padding-top: 20px;
         }
 
-        #thanks {
+        .form p {
             text-align: center;
+            margin-bottom: 80px;
         }
 
-        .f {
-            padding-left: 450px;
-            margin-top: 50px;
+        .form form {
+            margin-left: 350px;
         }
 
         .container {
-            width: 80%;
+            width: 750px;
         }
 
-        .projects input {
-            margin-top: 30px;
-            margin: auto;
-            width: 200px;
-        }
-
-        #Submit {
-            background-color: green;
-            margin-top: 10px;
-            color: white;
-            height: 30px;
-        }
-
-        #role {
-            color: #999;
-        }
-
-        .select {
+        .form select,
+        .form option {
             color: black;
         }
 
-        .text {
-            background-color: grey;
-            color: white;
-            height: 40px;
-            width: 350px;
-            float: left;
-            list-style: none;
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-top: 10px;
+        .form textarea {
+            height: 100px;
+            width: 750px;
+        }
 
-        }
-        #endpage{
+        .btn1 {
+            background-color: rgb(15, 53, 15);
+            width: 750px;
             text-align: center;
-            font-size:60px ;
-            padding-top: 300px;
-
-        }
-        .end{
-            background-color: rgb(69, 69, 92);
-            color: white;
-            height: 1000px;
-            text-align: center;
-        }
-        .e{
-            list-style: none;
-            color: white;
-            font-size: 30px;
-            margin-left: 250px;
-            margin-bottom: 350px;
-          }
-        .e li{
-            float: left;
-            padding:30px;
-        }
-        .ss li{
-            float: left;
-            list-style: none;
-            padding: 10px;
-            padding-right: 350px;
-        }
-        .e img{
             height: 30px;
-            width: 30px;
+            margin-top: 20px;
         }
-        .lastpage{
-            margin-bottom:70px;
+
+        .last {
+            background-color: rgb(44, 44, 49);
+            height: 750px;
+            text-align: center;
+        }
+
+        .end {
+            font-size: 60px;
+            font-weight: bold;
+            padding-top: 300px;
+        }
+
+        #end {
+            font-size: 15px;
+            padding-top: 0px;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            margin-top: 70px;
+            margin-bottom: 150px;
+        }
+
+        .item {
+            padding: 10px 40px;
+            font-size: 20px;
+
+        }
+        .p{
+            margin-top:35px;
+        }
+
+        .last p {
+            display: inline;
+            padding: 10px 50px;
         }
     </style>
-</head>
-
-<body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li>Contact</li>
-                <li>Survey</li>
-                <li>Work</li>
-                <li>About</li>
-            </ul>
-
-        </nav>
+    </body>
+    <header class="nav">
+        <div class="menu">About</div>
+        <div class="menu">Work</div>
+        <div class="menu">Survey</div>
+        <div class="menu">Contact</div>
     </header>
     <div class="mimic">
-        <p id="mimic"> HEY I AM A MIMIC </p>
-        <span id="web">a web developer</span>
+        <h1>Hey I am Mimic</h1>
+        <p>a web developer</p>
     </div>
-    <div class="projects">
-        <p id="projects">These are some of my projects</p>
-        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tribute.jpg?raw=true"
-            alt="">
-        <img
-            src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/random-quote-machine.png?raw=true">
-        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/calc.png?raw=true"
-            alt="">
-        <div>
-            <ul>
-                <li class="text" id="1">Tribute Page</li>
-                <li class="text" id="2">Random Quote Machine</li>
-                <li class="text" id="3">JavaScript Calculator</li>
-            </ul>
+    <div class="project">
+        <h1>These are some of my projects</h1>
+        <div class="images1">
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tribute.jpg?raw=true"
+                    alt=""> </div>
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/random-quote-machine.png?raw=true"
+                    alt=""> </div>
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/calc.png?raw=true"
+                    alt=""> </div>
         </div>
-        <img src="https://raw.githubusercontent.com/Silvitaneja26/Learning-Web-Dev-2020/master/Silvi/Task%201/Assets/map.jpg"
-            alt="">
-        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/wiki.png?raw=true"
-            alt="">
-        <img src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tic-tac-toe.png?raw=true"
-            alt="">
-        <div>
-            <ul>
-                <li class="text" id="4">Map Data Across the Globe</li>
-                <li class="text" id="5">Wikipedia Viewer</li>
-                <li class="text" id="6">Tic Tac Toe Game</li>
-            </ul>
+        <div class="text1">
+            <div class="tex1">Tribute Page</div>
+            <div class="tex1">Random Quote Machine</div>
+            <div class="tex1">JavaScript Calculator</div>
         </div>
-        <input id="button" type="button" value="show all >">
+        <div class="images1">
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/map.jpg?raw=true"
+                    alt=""> </div>
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/wiki.png?raw=true"
+                    alt=""> </div>
+            <div class="img1"><img
+                    src="https://github.com/Silvitaneja26/Learning-Web-Dev-2020/blob/master/Silvi/Task%201/Assets/tic-tac-toe.png?raw=true"
+                    alt=""></div>
+        </div>
+        <div class="text1">
+            <div class="tex1">Map Data Across the Globe</div>
+            <div class="tex1">Wikipedia Viewer</div>
+            <div class="tex1">Tic Tac Toe Game</div>
+        </div>
+        <button class="btn">Show all ></button>
+
     </div>
     <div class="form">
         <div id="heading">Survey Form</div>
-        <p id="thanks">Thankyou for taking the time to help us improve the platform</p>
-        <form class="f">
+        <p>Thankyou for taking the time to help us improve the platform</p>
+        <form>
             Name <br>
             <input class="container" type="text" placeholder="enter your name"><br><br>
             Email <br>
@@ -233,14 +234,14 @@
 
             <div>
                 <label for="currentrole">Which option best describes your current role?</label><br>
-                <select class="container" name="myrole" id="role">
+                <select class="container" name="myrole">
                     <option value="23" id="role">Select your role</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
 
                 </select>
-            </div>
+            </div><br>
             What would you like to see improved?(check all that apply) <br>
             <input type="checkbox">Front-end projects<br>
             <input type="checkbox">back-end projects<br>
@@ -255,33 +256,27 @@
             <input type="checkbox">Additional courses<br>
             <br><br>
             Any comments or suggestions?<br>
-            <textarea cols="116" rows="7" placeholder="Enter your suggestions here."></textarea>
-            <input class="container" id="Submit" type="button" value="Submit">
+            <textarea placeholder="Enter your suggestions here."></textarea>
+            <button class="btn1">Submit</button>
         </form>
     </div>
-    <div class="end">
-        <div class="lastpage"><p id="endpage"><strong> Let's Work Together...</strong> </p>
-            <span id="lastpage">How do you take your coffee?</span>
+    <div class="last">
+        <div class="end">Let's work together...</div>
+        <div id="end">How do you take your Coffee?</div>
+        <div class="flex">
+            <div class="item"><i class="fab fa-facebook-square"></i>Facebook</div>
+            <div class="item"><i class="fab fa-github"></i>Github</div>
+            <div class="item"><i class="fab fa-twitter"></i>Twitter</div>
+            <div class="item"><i class="fas fa-at"></i>Send a mail</div>
+            <div class="item"><i class="fas fa-mobile-alt"></i>Call me</div>
         </div>
-        
-        <ul class="e">
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR6pTOP6zoka03d1DWJRQ2pcDFQIhrXB1i7zVp3aIlnudYmbHpP&usqp=CAU" alt=""> Facebook</li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRYksPVg7y2R16ltCz1Kqs7GUdnXjCTzpYEE7XmdRSVRXEOt0lH&usqp=CAU" alt=""> Github</li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqbrHXPllF6IRseJbxbvwyvOz34DaZiq_sX2i8eCbDOdo5-ObC&usqp=CAU" alt=""> Twitter</li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA39CcM4Sab9qoWcrixdd5OxQdXu42xPzhmZoRe9LMQpWkB8Ap&usqp=CAU" alt=""> Send a mail</li>
-            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQIA_JzVMe9vhkm57rzTAs-Xy8dA6LxtLsuLQqdW9qbfPPWlIHp&usqp=CAU" alt=""> Call me</li>
-
-        </ul>
         <hr color="maroon" size="5px">
-        <ul class="ss">
-    <li> **This is just a fake portfolio.All the projects and contacts given are not real.</li>
-    <li>Created for Web Developers</li>
-        </ul>
+        <div class="p">
+            <p>This is a fake portfolio.All the projects and contact details given are not real. </p>
+            <p><i class="fas fa-clock"></i>created for web developers</p>
+        </div>
 
     </div>
 
-
-
-</body>
 
 </html>
