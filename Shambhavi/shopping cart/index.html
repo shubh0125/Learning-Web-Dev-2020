@@ -53,7 +53,7 @@
             <h3>Cart</h3>
           </div>
           <div class="col-2">
-            <b id="total-price">Total : $0</b>
+            <b id="total-price">Total : Rs0</b>
           </div>
         </div>
         <div class="table-responsive">
@@ -158,9 +158,9 @@
         cartItemTable.innerHTML += `
           <tr>
             <td>${cartItem.name}</td>  
-            <td>$${cartItem.price}</td>
+            <td>Rs${cartItem.price}</td>
             <td>${cartItem.quantity}</td>
-            <td>$${cartItem.total}</td>
+            <td>Rs${cartItem.total}</td>
             <td>
               <button
                 class="btn btn-danger"
@@ -173,7 +173,7 @@
         `
       })
 
-      totalPriceElement.innerText = `Total : $${totalPrice}`
+      totalPriceElement.innerText = `Total : Rs${totalPrice}`
     }
 
     function addToCart(productIndex) {
