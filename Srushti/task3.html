@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="task3.css">
+    <title>task3</title>
+</head>
+<body onload="setbackground();">
+    <header>
+        <a href="#home" style="color: rgb(104, 99, 99); text-decoration: none;">HOME </a>&emsp;
+        <a href="#gallery" style="color: rgb(104, 99, 99); text-decoration: none;">FOOD GALLERY </a>&emsp;
+        <a href="#order" style="color: rgb(104, 99, 99); text-decoration: none;">ORDER NOW </a>&emsp;
+        <a href="#contact" style="color: rgb(104, 99, 99); text-decoration: none;">CONTACT </a>&emsp;
+    </header>
+    <div id="home" class="container1">
+        <img src="bg.jpg" alt="bg" style="width:100%; height: 525px;">
+        <div class="wc">Welcome to FoodCart</div>
+        
+    </div>
+    <h2 id="gallery">FOOD GALLERY</h2>
+    <div class="row c1">
+            <div class="column ">
+              <img src="pizz.jpg">
+              <img src="burge.jpg">
+            </div>
+            <div class="column">
+                <img src="waffl.jpg">
+            </div>
+            <div class="column">
+                <img src="fries.jpg">
+                <img src="coke.jpg">
+            </div>
+    </div>
+    <br><br><hr  id="order"><br><br><br>
+    <div>
+        <div class="container">
+            <div>
+              <table  width="100%" border="1" align="center" cellpadding="0" cellspacing="1">
+                <tr class="table1" style="border-collapse:collapse">
+                  <th  style="width: 30%;">Image</th>
+                  <th  style="width: 30%;">Name </th>
+                  <th  style="width: 20%;">Price </th>
+                  <th  style="width: 20%;">Add</th>
+                </tr>
+                <tr class="table1" style="border-collapse:collapse">
+                  <td><img src="pizza.jpeg" alt="Pizza" class="img1"></img></td>
+                  <td>Pizza</td>
+                  <td>$50</td>
+                  <td><button onclick="addItem1()" class="button1">Add</button></td>
+                  
+                </tr>
+                <tr class="table1" style="border-collapse:collapse">
+                    <td><img src="burger.jpg" alt="Burger" class="img1"></img></td>
+                    <td>Burger</td>
+                    <td>$40</td>
+                    <td><button onclick="addItem2()" class="button1">Add</button></td>
+                    
+                  </tr>
+                  <tr class="table1" style="border-collapse:collapse">
+                    <td><img src="waffle.jpg" alt="Waffle" class="img1" ></img></td>
+                    <td>Waffle</td>
+                    <td>$15</td>
+                    <td><button onclick="addItem3()" class="button1">Add</button></td>
+                  </tr>
+                  <tr class="table1" style="border-collapse:collapse">
+                    <td><img src="cocacola.jpg" alt="Coke" class="img1"></img></td>
+                    <td>Coca-Cola</td>
+                    <td>$10</td>
+                    <td><button onclick="addItem4()" class="button1">Add</button></td>
+                  </tr>    
+              </table>
+              </div>
+            <div class="d2">
+                <table class="table1" width="100%" border="1" align="center" cellpadding="0" cellspacing="1" id="myTableData">
+                    <tr style="border-collapse:collapse">
+                      <th style="width: 30%;">Name</th>
+                      <th colspan="2" style="width: 20%;">Quantity</th>
+                      <th style="width: 15%;">Remove</th>
+                      <th style="width: 35%;">Total Price ( in $ )</th>
+                    </tr>
+               </table>
+               <br>  
+               <div class="con">
+                     <input type="button" value="Total Price" class="button" onClick="total()">
+                      <p id="demo"></p>
+                </div>
+                <p id="demo1"></p>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <hr>
+    <footer id="contact">
+        <a href="#" style="color: black; text-decoration: none;">Facebook </a>&emsp;
+        <a href="#" style="color: black; text-decoration: none;">GitHub</a> &emsp;
+        <a href="#" style="color: black; text-decoration: none;">Twitter </a>&emsp;
+        <a href="#" style="color: black; text-decoration: none;">Send an email</a>&emsp;
+        <a href="#" style="color: black; text-decoration: none;">Call me</a>
+        <p>All Rights Reserved. Copyright &copy; FoodCarts Ltd.</p>
+    </footer>
+    <script src="task3.js"></script>
+</body>
+</html>
