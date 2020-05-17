@@ -55,10 +55,10 @@ function dispcart()
         code+="<button class='btn btn-danger' onclick='del(this)'  data-name='"+x.name+"' > X </button> <li class='item'> "+x.name+"</li>  <button class='btn as' id='add1' onclick='add(this)' data-name='"+x.name+"' data-price='"+x.price+"'> + </button>   <input type='number' class='quantity'  min='0' value='" +x.count+"'>   <button class='btn as' id='subttract' onclick='removefromcart(this)'  data-name='"+x.name+"'> - </button><br>" ;
     
     });
-console.log(code);
     shoppinglist.innerHTML=code;
-    calctotal();
+    var x=calctotal();
     document.getElementById('cart').className="cartdisp";
+    document.getElementById("total").innerText="Total = ₹ "+x;
 }
 
 function calctotal()
@@ -67,7 +67,8 @@ function calctotal()
     cartlist.forEach(function(x){
         total+=x.price*x.count;
     })
-    document.getElementById("total").innerText="Total = ₹ "+total;
+    return total;
+   
 }
 function add(fruit)
 {
@@ -107,4 +108,53 @@ function changebgd(){
     document.getElementById("hd").style.color=rgb;
 
 
+}
+function clearall(){
+        for(var i in cartlist )
+        {
+                delete cartlist[i];      
+        }
+        dispcart();
+    
+}
+function paybill(){
+    document.getElementsByClassName('bill')[0].style.backgroundColor="green";
+    document.getElementsByClassName('submit')[1].className="btn  disable";
+};
+function clearbill()
+{
+
+    document.getElementsByClassName("bill")[0].style.display="none";
+
+    
+}
+function submitbill(){
+    if(calctotal()>0)
+    {
+    
+    
+    var billcart=cartlist;
+  
+    var code="<h1 class='billhead'>Bill</h1>";
+    billcart.forEach(function(x){
+      
+        
+        code+="<li class='billitem'> "+x.name+" -"+x.count+"</li><br>" ;
+    
+    });
+    total=calctotal();
+    code+="<h3>Total = ₹ "+total+"<br>";
+
+    code+="<button class='btn btn-primary submit' onclick='paybill()'>Pay</button> <button class='btn btn-primary clear' onclick='clearbill()'>Delete</button>";
+
+
+  document.getElementsByClassName("bill")[0].style.display="block";
+    document.getElementById("bill").innerHTML=code;
+
+    clearall();
+ 
+
+    }
+
+    
 }
