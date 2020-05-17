@@ -1,4 +1,4 @@
-unction addItem1()
+function addItem1()
 {
     var table = document.getElementById("myTableData");
     var rowCount=table.rows.length;
