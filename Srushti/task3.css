@@ -1,0 +1,136 @@
+header{
+ text-align: right;
+ padding-top: 10px;
+ padding-bottom: 20px;
+ position: sticky;
+}
+.container1 {
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+.wc {
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+    font-family: fantasy;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+}
+img{
+    width:100%;
+}
+.c1{    
+    padding-top: 10px;
+    padding-left: 200px;
+}
+h2{
+  font-size: 25px;
+  color: rgb(104, 99, 99);
+  text-align: center;
+  padding-top: 20px;
+  text-decoration: underline;
+}
+* {
+    box-sizing: border-box;
+  }
+  .column {
+    float: left;
+    width: 25%;
+    padding: 20px;
+  }
+  
+  .column img {
+    margin-top: 12px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+.img1{
+
+    width: 100%;
+}
+table{
+    width: 80%;   
+}
+
+.container{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding-left: 50px;
+}
+.con{
+    display: grid;
+    grid-template-columns: 100px 50px;
+    grid-column-gap: 50px;
+    padding-left: 60px;
+}
+#demo1{
+    padding-left: 120px;
+}
+.button{
+    background-color: #E0FFFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#003471), to(#448CCB)); 
+    color: white;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+}
+.button1{
+    background-color: #FFDAB9;
+    border-radius: 10px;
+    border:none;
+    padding: 5px 10px;
+}
+.button2{
+    background-color: #FFF0F5 ;
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+}
+.button3{
+    background-color: #FFE4E1;
+    border-radius: 10px;
+    border:none;
+    padding: 5px 10px;
+}
+footer{
+  font-family: sans-serif;
+  padding:20px;
+  text-align: center;
+  
+  }
+  hr{
+    border: 1px solid black;
+
+    }
+    .table1{
+      background: -moz-linear-gradient(-90deg, #003471, #448CCB);
+      background: -webkit-gradient(linear, left top, left bottom, from(#003471), to(#448CCB));
+      border: 1px solid #66A8FF;
+  }
+  
+  table, th, td {
+      border-left: none;
+      border-right: none;
+      padding: 10px;
+  }
+  
+  td {
+      font-size:28px;
+      color: #fff;
+      text-align: center;
+      height: 48px;
+  }
+  
+  table{
+      border-collapse:collapse;
+  }
