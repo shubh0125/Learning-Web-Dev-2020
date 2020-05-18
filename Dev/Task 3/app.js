@@ -64,9 +64,9 @@ function dispBill() {
         var minusButton = '<button class="btn bg-warning text-white" id="' + fruit + '" onclick="removeItem(this.id)">-</button>';
         var summary = fruit + ' X ' + fruitList[fruit][1] + ' = ₹' + fruitList[fruit][1] * fruitList[fruit][0];
         // console.log(fruit, fruitList[fruit], summary);
-        $('#bill_item').append('<div class= "col-12 bill_sums my-1">' + xButton + '<span class="text-center mx-2"> ' + summary + '</span><span class="float-right">' + minusButton + plusButton +'</span></div>');
+        $('#bill_item').append('<div class= "col-12 bill_sums my-1">' + xButton + '<span class="text-center" style="font-size: 1.25em; font-weight: 500;">' + summary + '</span><span class="float-right">' + minusButton + plusButton +'</span></div>');
     }
-    $('#bill_total').append('Total = ₹' + getTotal());       
+    $('#bill_total').append('<h4>Total = ₹' + getTotal() + '</h4>');       
 }
 
 var timer
