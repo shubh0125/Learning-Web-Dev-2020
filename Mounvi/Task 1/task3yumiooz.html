@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    transition:1s;
+}
+.container{
+    display:flex;
+}
+h1{
+    text-align: center;
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: tomato;
+    margin:auto;
+    padding:auto;
+    text-shadow: black;
+    color:black;
+}
+section{  
+    display:flex;
+    justify-content: center;
+    flex:1;
+}
+section h2{
+    color:black;
+    padding:12px 32px;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    padding:0 4px;
+
+}
+.column{
+    float:left;
+    flex:33.33%;
+    padding:5px;
+}
+figcaption{
+    background-color:black;
+    color:white;
+    font-style:italic;
+    padding:2px;
+    text-align:center;
+}
+button{
+    background:azure;
+    border-style: outset;
+    padding:4px 4px;
+    display:block;
+    margin-left: auto;
+    margin-right:auto;
+    font-family:italic;
+    text-align: center;
+   flex-wrap: wrap;
+}
+center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+table,td,th{
+    border: 2px solid  black;
+}
+th,td{
+    padding:20px;
+}
+textarea{
+    border: 2px solid black;
+}
+.checked{
+    color:orange;
+}
+    </style>
+    <title>Task3</title>
+</head>
+<body id="randombgdcolor">
+    <h1>YUMMIOOZ FOOD CENTER</h1>
+ <div class="container"> 
+    <section class="lhs">
+        <div class="row">
+            <div class="column">
+                <h2>Items Available</h2>
+                <img src="pizza pic.jpg" style="width:100%"><figcaption>FARMHOUSE PIZZA Rs.180</figcaption><div class="center"><button type="button"onclick="addpizza()">ADD</button></div>
+                <img src="burger pics.jpg" style="width:100%"><figcaption>DELUX BURGER Rs.120</figcaption><div class="center"><button type="button"onclick="addburger()">ADD</button></div>
+                <img src="fries pic.jpg" style="width:100%"><figcaption>LARGE FRENCH FRIES Rs.80</figcaption><div class="center"><button type="button"onclick="addfries()">ADD</button></div>
+            </div>
+                <div class="column">
+                    <h2>100% Delicious food!</h2>
+                    <img src="fooditem1.JPG" style="width:100%"><figcaption>FARM VEG TACO Rs.130</figcaption><div class="center"><button type="button"onclick="addtaco()">ADD</button></div>
+                    <img src="fooditem2.JPG" style="width:100%"><figcaption>VEG HAKKA NOODLES Rs.110</figcaption><div class="center"><button type="button"onclick="addnoodles()">ADD</button></div>
+                    <img src="fooditem33.JPG" style="width:100%"><figcaption>CHEESE SANDWICH Rs.90</figcaption><div class="center"><button type="button"onclick="addsandwich()">ADD</button></div>
+                </div>
+        </div>
+    </section>
+    <section class="rhs">
+        <div class="row">
+            <div class="column">
+        <h2>Have a look on your bill below:</h2>
+     <table id="table" style="width:100%">
+    <tr>
+        <th>ITEM</th>
+        <th>QUANTITY</th>
+        <th>ADD more</th>
+        <th>REMOVE</th>
+        <th>TOTAL PRICE</th>
+    </tr>
+    <tr>
+        <td>Farmhouse Pizza</td>
+        <td id="pizza">0</td>
+        <td><button type="button" onclick="addpizza()">+</button></td>
+        <td><button type="button" onclick="rempizza()">--</button></td>
+        <td id="pizzaprice">0</td>
+    </tr>
+    <tr>
+        <td>Delux Burger</td>
+        <td id="burger">0</td>
+        <td><button type="button" onclick="addburger()">+</button></td>
+        <td><button type="button" onclick="remburger()">--</button></td>
+        <td id="burgerprice">0</td>
+    </tr>
+<tr>
+    <td>Large French fries</td>
+    <td id="fries">0</td>
+        <td><button type="button" onclick="addfries()">+</button></td>
+        <td><button type="button" onclick="remfries()">--</button></td>
+        <td id="friesprice">0</td>
+</tr>
+<tr>
+    <td>Farm veg Taco</td>
+    <td id="taco">0</td>
+        <td><button type="button" onclick="addtaco()">+</button></td>
+        <td><button type="button" onclick="remtaco()">--</button></td>
+        <td id="tacoprice">0</td>
+</tr>
+<tr>
+    <td>Veg Hakka noodles</td>
+    <td id="noodles">0</td>
+        <td><button type="button" onclick="addnoodles()">+</button></td>
+        <td><button type="button" onclick="remnoodles()">--</button></td>
+        <td id="noodlesprice">0</td>
+</tr>
+<tr>
+    <td>Cheese Sandwich</td>
+    <td id="sandwich">0</td>
+        <td><button type="button" onclick="addsandwich()">+</button></td>
+        <td><button type="button" onclick="remsandwich()">--</button></td>
+        <td id="sandwichprice">0</td>
+</tr>
+<tr>
+    <td><td><td></td><td><button type="button" onclick="totalcost()">Calculate Total</button></td><td id="cost">0</td>
+</tr>
+</table>
+<span id="total"></span>
+<br>
+<div>
+<h3>Hope you enjoyed shopping with us!</h3>
+<span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span>
+<h3>For queries and feedback reach us at +91 9686662439!</h3>
+<h3><button type="button" onclick="disp()" style="background-color:lightgreen">SUBMIT</button></h3>
+</div>
+</div>
+    </section>
+ <script>
+     var a=0,b=0,c=0,d=0,e=0,f=0;
+function addpizza(){
+    document.getElementById("pizza").innerHTML=++a;
+    document.getElementById("pizzaprice").innerHTML=a*180;
+}
+function addburger(){
+    document.getElementById("burger").innerHTML=++b;
+    document.getElementById("burgerprice").innerHTML=b*120;
+}
+function addfries(){
+    document.getElementById("fries").innerHTML=++c;
+    document.getElementById("friesprice").innerHTML=c*80;
+}
+function addtaco(){
+    document.getElementById("taco").innerHTML=++d;
+    document.getElementById("tacoprice").innerHTML=d*130;
+}
+function addnoodles(){
+    document.getElementById("noodles").innerHTML=++e;
+    document.getElementById("noodlesprice").innerHTML=e*110;
+}
+function addsandwich(){
+    document.getElementById("sandwich").innerHTML=++f;
+    document.getElementById("sandwichprice").innerHTML=f*90;
+}
+function rempizza(){
+    document.getElementById("pizza").innerHTML=--a;
+    document.getElementById("pizzaprice").innerHTML=a*180;
+}
+function remburger(){
+    document.getElementById("burger").innerHTML=--b;
+    document.getElementById("burgerprice").innerHTML=b*120;
+}
+function remfries(){
+    document.getElementById("fries").innerHTML=--c;
+    document.getElementById("friesprice").innerHTML=c*80;
+}
+function remtaco(){
+    document.getElementById("taco").innerHTML=--d;
+    document.getElementById("tacoprice").innerHTML=d*130;
+}
+function remnoodles(){
+    document.getElementById("noodles").innerHTML=--e;
+    document.getElementById("noodlesprice").innerHTML=e*110;
+}
+function remsandwich(){
+    document.getElementById("sandwich").innerHTML=--f;
+    document.getElementById("sandwichprice").innerHTML=f*90;
+}
+function totalcost()
+{
+    var table=document.getElementById("table"),sumTotal=0;
+    for(var i=1;i<table.rows.length-1 ;i++)
+    {
+    sumTotal=sumTotal+parseInt(table.rows[i].cells[4].innerHTML);
+    }
+    document.getElementById("cost").innerHTML=sumTotal;
+}
+function disp()
+{
+    window.alert("Thanks for shopping with us!");
+}
+setInterval(function(){
+    var x=Math.random()*256;
+    var y=Math.random()*256;
+    var z=Math.random()*256;
+    var bg="rgb("+x+","+y+","+z+")";
+    var x1=Math.random()*256;
+    var y1=Math.random()*256;
+    var z1=Math.random()*256;
+    var bg1="rgb("+x1+","+y1+","+z1+")";
+    document.getElementById("randombgdcolor").style.background="linear-gradient(to right,"+ bg +","+ bg1 +")";
+},1500);
+
+
+ </script>
+</body>
+</html>
