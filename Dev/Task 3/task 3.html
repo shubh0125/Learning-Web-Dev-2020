@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Shoppe</title>
+    <style>
+        * {
+            padding: 0;
+        }
+        .my_btn {
+            font-size: 15vh;
+            width: 100%;
+        }
+        #fruits {
+            width: 100%;
+        }
+        .my_price {
+            font-weight: 60 0 ;
+            font-size: 3vh;
+        }
+        #items {
+            height: calc(10 0 vh - 70 px);
+        }
+        /* #bill_display {
+            background-color: rgba(255, 255, 255, 0.5);
+        } */
+        .bill_sums {
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+<body id="shopping">
+    <div class="container text-center" id="header">
+        <h1>👨‍🌾 Shoppe</h1>
+    </div>
+    <div class="row container-fluid m-0 pt-3">
+        <div class="row col-md-7 col-12 container-fluid" id="items">
+            <div class=" col-md-4 col-6 my-1 container-fluid" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Apple" onclick="addItem(this.id)">
+                    🍎
+                    <div class="my_price">Apple <br> ₹120 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Mango" onclick="addItem(this.id)">
+                    🥭
+                    <div class="my_price">Mango <br> ₹60 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Banana" onclick="addItem(this.id)">
+                    🍌
+                    <div class="my_price">Banana <br> ₹30 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Melon" onclick="addItem(this.id)">
+                    🍈
+                    <div class="my_price">Melon  <br> ₹50 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Grapes" onclick="addItem(this.id)">
+                    🍇
+                    <div class="my_price">Grapes  <br> ₹40 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Orange" onclick="addItem(this.id)">
+                    🍊
+                    <div class="my_price">Orange  <br> ₹80 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Peach" onclick="addItem(this.id)">
+                    🍑
+                    <div class="my_price">Peach  <br> ₹120 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Cherry" onclick="addItem(this.id)">
+                    🍒
+                    <div class="my_price">Cherry  <br> ₹150 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Pear" onclick="addItem(this.id)">
+                    🍐
+                    <div class="my_price">Pear  <br> ₹90 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Kiwi" onclick="addItem(this.id)">
+                    🥝
+                    <div class="my_price">Kiwi  <br> ₹70 </div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Lemon" onclick="addItem(this.id)">
+                    🍋
+                    <div class="my_price">Lemon  <br> ₹100</div>
+                </button>
+            </div>
+            <div class="col-md-4 col-6 my-1" id="fruits">
+                <button class="p-0 btn bg-light my_btn" id="Pie" onclick="addItem(this.id)">
+                    🥧
+                    <div class="my_price">Pie  <br> ₹0</div>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-5 col-12 container-fluid p-0" id="bill-display" style="background-color: rgba(255, 255, 255, 0.5);">
+            <div class="container-fluid col-12 p-0 m-2" id="bill_item"><h3>Bill</h3></div>
+            <div class="container-fluid col-12" id="bill_total"></div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
+<!-- 
+<button class="btn bg-danger text-white" id="Apple" onclick="deleteItem(this.id)">X</button>
+<button class="btn bg-info text-white" id="Apple" onclick="removeItem(this.id)">-</button>
+<button class="btn bg-info text-white" id="Apple" onclick="addItem(this.id)">+</button> -->
