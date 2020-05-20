@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>tomato- order food online</title>
+  <meta charset="utf-8">
+  <link rel = "stylesheet" href = "Task3_CSS.css">
+</head>
+<body>
+  <div id = "header">
+    <h1><i>tomato <img src = "Tomato.png" width = "35px" height = "25px"> order food online</i></h1>
+  </div>
+  <div class = "splitPage" id = "menu">
+    <h1>What would you like to have?</h1>
+    <button id = "Rice" onclick = "addFoodItem(this.id)"><img src = "Plain Rice.jpg" width = "190px" height = "130px">Rice Rs. 50/-</button>
+    <button id = "Naan" onclick = "addFoodItem(this.id)"><img src = "Butter Naan.jpg" width = "190px" height = "130px">Naan Rs. 6/-</button>
+    <button id = "Chicken" onclick = "addFoodItem(this.id)"><img src = "Chilli Chicken.webp" width = "190px" height = "130px">Chicken Rs. 60/-</button>
+    <button id = "Paneer" onclick = "addFoodItem(this.id)"><img src = "Chilli Paneer.jpg" width = "190px" height = "130px">Paneer Rs. 65/-</button>
+    <button id = "Milkshake" onclick = "addFoodItem(this.id)"><img src = "Oreo Shake.jpg" width = "190px" height = "130px">Milkshake Rs. 55/-</button>
+    <button id = "Dessert" onclick = "addFoodItem(this.id)"><img src = "Ice Cream.jpg" width = "190px" height = "130px">Dessert Rs. 30/-</button>
+  </div>
+  <div class = "splitPage" id = "bill">
+    <!--<h1>&nbsp; YOUR BILL:</h1>-->
+    <div id = "billItems"></div>
+    <!--<h3>Sl.no &emsp; &emsp; &emsp; &emsp; Item Name &emsp; &emsp; &emsp; &emsp; Quantity &emsp; &emsp; &emsp; &emsp; Total Price</h3>-->
+    <div id = "finalBill"></div>
+  </div>
+</body>
+<script src = "Task3_JS.js"></script>
+</html>
