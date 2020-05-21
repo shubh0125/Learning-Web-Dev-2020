@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" type="text/css" href="QUIZ.css"> 
+</head>
+<body>
+    <div class="form">
+        <div class="rules" id="rules">
+        <h1> Guidelines </h1>
+            <ul >
+                <li>You have to attempt <b>5 questions</b>.</li>
+                <li><b>Only one</b> out of the four options is correct.</li>
+                <li>Time limit per questions is <b>12 seconds</b></li>
+            </ul>
+        </div>
+        <div id="start" >
+            <button type="button"   id="jk" onclick="startQuiz()"> Start Quiz </button>
+        </div>
+        <div id="quiz" style="display: none">
+            <h1><div id="question"></div></h1>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none">
+            <a href="form.html" style="text-decoration: none;">
+                <button class="try" style="display: block;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+                top:125px;
+                padding: 3px;
+                color: rgb(236, 236, 236);
+                border-color: rgba(10, 3, 77);
+                background-color: rgba(10, 3, 77);">Try Again ? </button>
+            </a>
+        </div>   
+    </div>
+    <script src="qScript.js"></script>
+</body>
+</html>

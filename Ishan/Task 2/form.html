@@ -1,0 +1,41 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./form.css">
+    </head>
+    <body data-gr-c-s-loaded="true">
+    <div class="signup-form">
+        <form action="/examples/actions/confirmation.php" method="post">
+            <h2>Register</h2>
+            <p>Please fill in this form to participate in the quiz!</p>
+            <hr>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-xs-6"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+                    <div class="col-xs-6"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+                </div>        	
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+            </div>
+            <div class="form-group">
+                <input type="tel" class="form-control" name="phone-number" pattern="[0-9]{10}" placeholder="Phone Number (10-digits)" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+            </div>        
+            <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+            <div class="form-group">
+                <a href="QUIZ.html" ><button type="submit" class="btn btn-primary btn-lg">Register</button></a>
+            </div>
+        </form>
+    
+    </body></html>

@@ -1,0 +1,117 @@
+#intro {
+    /*background-color: #000000e0 !important;*/
+    background: linear-gradient(45deg,rgb(54, 56, 58), rgb(0, 0, 0)) !important;
+    width: 100%;
+    height: 46vw;
+    /*height: 660px;*/
+}
+.work {
+    padding-top: 3%;
+    background-color: #44567E;
+    height: 100%;
+}
+.col {
+    margin-left: -5%;
+}
+.row1 {
+    margin: 0 15%;
+    display: flex;
+}
+.row2 {
+    margin: 0 15%;
+    display: flex;
+}
+#images {
+    height: 18vw;
+    width: 27vw;
+}
+.proj {
+    margin-top: 4vw;
+}
+.ABX {
+    background-color:#313842;
+    text-align: center;
+    color:white; 
+    left: 0%;
+    font-size: 1.1vw;
+    padding: 0.5vw;
+    margin-left: -1%;
+    margin-right: 9%;
+}
+.show {
+    color: white;
+    background-color: #313842;
+    border: 0;
+    padding: 0.4vw;
+    width: 7vw;
+    margin-left: 46.5vw;
+    font-size: 1.1vw;
+    margin-top: 2vw;
+    margin-bottom: 2.8vw;
+}
+.survey {
+    background-color: #1B1C31;
+    color: white;
+}
+.H {
+    text-align: center;
+    padding: 3vw;
+    font-size: 1.3vw;
+}
+.box {
+    width: 100%;
+    height: 2vw;
+    font-size: 1.2vw;
+    border-radius: 2px;
+    border: 0px;
+    margin-bottom: 3vw;
+}
+#comments {
+    padding-bottom: 6.8vw;
+    width: 100%;
+    height: 9vw;
+    padding-left: .8vw;
+    border-radius: 0vmax;
+}
+#submit {
+    background-color: #37B063;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+#footer{
+    background-color: #313842;
+}
+#footer{
+    color: white;
+    text-align: center;
+}
+#footer h1{
+    padding-top: 8vw;
+    font-weight: 600;
+    font-size: 42px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#footer h6{
+    margin: 0px;
+    line-height: 5px;
+    font-size: 13px;
+    font-weight: 100;
+}
+#footer hr{
+    background: #C22E44;
+    height: 2px;
+    border: 0px;
+}
+#notice{
+    padding: 0.6% 0% 2% 0%;
+    font-size: 13px;
+    font-weight: 100;
+} 
+#icons{
+    margin: 2.8% 0% 8% 0%;
+    font-size: large;
+}
