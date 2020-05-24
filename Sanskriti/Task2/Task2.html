@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F.R.I.E.N.D.S. QUIZ</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+</head>
+<body>
+    <div class="quiz-home-box custom-box">
+        <h4>You'll have 15 seconds to answer each question.</h4>
+        <button type="button" class="start-quiz-btn btn">Start the Quiz</button>
+        <img src="img/friends.jpg" alt="F.R.I.E.N.D.S.">
+    </div>
+    <div class="quiz-box custom-box">
+        <div class="stats">
+            <div class="quiz-time">
+                <div class="remaining-time">15</div>
+            </div>
+            <div class="score-board">
+                <span class="score-text">correct:</span>
+                <span class="score">0</span>
+            </div>
+        </div>
+        <div class="question-box">
+            <div class="current-question-num">1/5
+
+            </div>
+            <div class="question-text">
+                How many categories of towels does Monica have?
+
+            </div>
+
+        </div>
+        <div class="option-box">
+            <div class="option">9</div>
+            <div class="option">11</div>
+            <div class="option">13</div>
+            <div class="option">7</div>
+    </div>
+    <div class="answer-description">these were the 11-Guest,Fancy guest,Personal,Fancy personal,Decorative bathroom,Parents or UBER special guests,Cleaning,Kitchen (dish towels),Decorative kitchen towels,Ones specifically for hair,Ones specifically for male “guests”
+</div>
+    <div class="next-question">
+        <button type="button" class="next-question-btn btn">Next Question</button>
+        <button type="button" class="see-result-btn btn">See your result</button>
+    </div>
+    <div class="quiz-over-box custom-box">
+        <h1>Quiz Result</h1>
+        <h4>Total Questions:<span class="total-questions"></span></h4>
+        <h4>Attempt:<span class="total-attempt"></span></h4>
+        <h4>Correct Answers:<span class="total-correct"></span></h4>
+        <h4>Wrong Answers:<span class="total-wrong"></span></h4>
+        <h4>percentage:<span class="total-percentage"></span></h4>
+        <button type="button" class="start-again-quiz-btn btn">Start Again</button>
+        <button type="button" class="go-home-btn btn">Go to Home</button>
+    </div>
+<script src="script.js"></script> 
+</body>
+</html>
