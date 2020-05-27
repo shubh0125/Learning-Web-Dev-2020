@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADG TASK 2</title>
+    <link href="quiz.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div class="btn-grid" id="answer-buttons">
+                <button class="btn" id = "A" onclick="checkCorrect('A')">Option 1 </button>
+                <button class="btn" id = "B" onclick="checkCorrect('B')">Option 2</button>
+                <button class="btn" id = "C" onclick="checkCorrect('C')">Option 3</button>
+                <button class="btn" id = "D" onclick="checkCorrect('D')">Option 4</button>
+            </div>
+            <div id="timer">
+                <div id="numbertimer"></div>
+            </div>   
+        </div>
+<div id="scorecontainer" class="hide">
+    <div id="scoredisplay" class="scorecontainer"></div>
+    <br>
+    <br>
+    <button type="reset" class="resetbutton" onclick="resetoption()">Reset</button>
+</div>
+<div class="controls">
+    <button id="start-button" class="btn start-btn">Start The Quiz</button>
+</div>
+</div>     
+<script src="quiz.js"></script>
+</body>
+</html>
