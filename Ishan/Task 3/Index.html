@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IB's Task 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <nav>
+            <a class="logo" href="/"><img src="logo.png" alt="logo" style=" position: absolute;
+                    top: 20px !important;
+                    /* height: 45px; */
+                    margin-bottom: -10px;
+                    width: 35px;"></a>
+            <ul class="nav__links">
+                <li><form action="/action_page.php">
+                    <input type="text" placeholder="&emsp;&emsp;Search.." name="search" style="border-radius: 50px; border: none;">
+                    <button type="submit" style="border: none; width: 25px; border-radius: 15px;"><i class="fa fa-search"></i></button>
+                  </form></li>
+                <li class="cta"><a href="#">Log out</a></li>
+            </ul>
+        </nav>
+        
+    </head>
+    <body>
+        <div class="container menu">
+            <div class="head" style="font-size: 1.35em; text-align: left; grid-row: 80px;">&ensp;&ensp;Today's Menu -</div>
+            <button id = "SAMOSA" onclick = "addFoodItem(this.id)" class="item i1 a"><img src="images/samosa.jpg" style="height: 100%; width: 100%;"><br>SAMOSA</button>
+            <button id = "PASTA" onclick = "addFoodItem(this.id)" class="item i2 a"><img src="images/pasta.jfif" style="height: 100%; width: 100%;"><br>PASTA</button>
+            <button id = "BURGER" onclick = "addFoodItem(this.id)" class="item i3 b"><img src="images/burger.jpg" style="height: 100%; width: 100%;"><br>BURGER</button>
+            <button id = "PIZZA" onclick = "addFoodItem(this.id)" class="item i4 b"><img src="images/pizza.jpg" style="height: 100%; width: 100%;"><br>PIZZA</button>
+            <div class="order" style="font-size: 1.35em; text-align: left; grid-row: 80px;">&ensp;&ensp;Your Order -</div>
+            <div class="checkOut">
+                <div id = "billItems" style="height: 100%;"></div>
+                <div id = "finalBill" style="height: 100%;"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 25px 5% 10px;
+    background-color: #24252a;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-46deg,#0b485b,#f56217,#2196f3,#f44336);
+    background-size: 2000% 2500%;
+    animation: gradient 20s ease infinite;
+  }
+
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+  .container {
+      min-width: -webkit-fill-available;
+      margin-right: 110px !important;
+      opacity: 0.6;
+      font-weight: 600;
+      font-size: 1.2em;
+      text-align: center;
+      padding: 15px;
+      color: #fff;
+      background-color: #24252a;
+      margin-left: 80px;
+      margin-top: 2.5%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      margin-right: 20px;
+      grid-auto-rows: minmax(80px , 140px);
+      padding-bottom: 150px;
+  }
+
+  .head {
+      height: 50px;
+      grid-column: 1/3;
+  }
+
+  .item {
+      border: none;
+      font-size: 1.2em;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      background-color: inherit;
+  }
+  .a {
+    margin-top: -70px;
+  }
+  .b {
+      margin-top: 30px;
+    margin-bottom: -110px;
+
+  }
+  .i1 {
+      grid-row: 2;
+      grid-column: 1;
+  }
+  .i2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+   .i3 {
+       grid-row: 3;
+       grid-column: 1;
+   }
+   .i4 {
+    grid-row: 3;
+    grid-column: 2;
+}
+    .order {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .checkOut {
+        grid-row: 2/3;
+        grid-column: 3;
+    }
