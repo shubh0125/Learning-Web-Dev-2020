@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    text-align: center;
+}
+body
+{
+    background-color: #232323;
+    color:white;
+}
+#heading
+{
+    background-color:rgb(40, 85, 160);
+    color:white;
+    text-transform: uppercase;
+    padding:10px 0;
+    text-align:center;
+    line-height: 10px;
+    margin-bottom: 3%;
+}
+.card
+{
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 45px;
+    background-color: coral;
+    color: black;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.card-body{
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius:5px;
+    border-bottom-left-radius: 5px;
+}
+
+#bill 
+{
+    background-color: rgba(255, 180, 192, 0.5);
+    padding:2em;
+    position: relative;
+    box-shadow: 0 15px 25px -10px rgba(0,0,0, 0.25);
+    transition: transform 300ms, box-shadow 300ms;
+    width:70%;
+    height:100%;
+}
+
+#billTotal {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+.header{
+    color:goldenrod;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    padding:10px 0;
+    line-height: 10px;
+}
+#displayBill{
+    background-color: chocolate
+}
+.output{
+    font-size: 20px;
+    font-weight: 500;
+}

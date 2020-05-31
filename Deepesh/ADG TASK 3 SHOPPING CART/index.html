@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>ADG TASK 3</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--CSS STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Tag-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  </head>
+  <body id="randombgd">
+<!-- jumbotron -->
+<div id="heading">
+  <h2>CHOCO MART</h2>
+</div>
+<!-- grid of cards for items display-->
+<div class="row">
+  <div class="col">
+    <h1 class="header">Items</h1>
+    <div class="row">
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://5.imimg.com/data5/ES/FV/WY/SELLER-93160461/cadbury-dairy-milk-chocolate-500x500.jpg" alt="Dairy Milk">
+  <div class="card-body">
+    <h5 class="card-title">Dairy Milk - $2</h5>
+    <button class="btn btn-primary center" id ="DairyMilk" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTAW_n9mTCvrunQ9koqYShPkuR1A-qVqzQ41ij2NRTvOFX9XgLS&usqp=CAU" alt="Twix">
+  <div class="card-body">
+    <h5 class="card-title">Twix - $3</h5>
+    <button class="btn btn-primary center" id ="Twix" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://cdn.heinemann-shop.com/images/h44/h86/9378508734494.jpg" alt="Snickers">
+  <div class="card-body">
+    <h5 class="card-title">Snickers -$4</h5>
+    <button class="btn btn-primary center" id ="Snickers" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe7tQ-Wv6VaaY6DOf2J-rnMOcdSxu1GvPJDsgdMfGY1PTpg-py&usqp=CAU" alt="Bounty">
+  <div class="card-body">
+    <h5 class="card-title">Bounty -$5</h5>
+    <button class="btn btn-primary center" id ="Bounty" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://u5j4h3u7.stackpathcdn.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/3/0/302377_a.jpg" alt="Milky Way">
+  <div class="card-body">
+    <h5 class="card-title">Milky Way -$6</h5>
+    <button class="btn btn-primary center" id ="MilkyWay" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+      <div class="col-4 card">
+        <img class="card-img-top" src="https://www.liberaldictionary.com/wp-content/uploads/2019/01/aero-4666.jpg" alt="Aero">
+  <div class="card-body">
+    <h5 class="card-title">Aero -$7</h5>
+    <button class="btn btn-primary center" id ="Aero" onclick="additemcart(this.id)">Add To Cart</button>
+  </div>
+      </div>
+
+    </div> <!--first row-->
+  </div> <!--first col-->
+  <div class="col-md-6 col container-fluid p-0" id="bill">
+    <div class="container-fluid col p-0 m-2" id="billItems">Bill</div>
+    <div class="container-fluid col" id="billTotal">Total = $0</div>
+</div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
