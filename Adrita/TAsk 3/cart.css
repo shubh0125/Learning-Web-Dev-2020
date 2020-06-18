@@ -1,0 +1,160 @@
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+  }
+  
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-color: white;
+    border-style: double;
+  }
+  
+  .item{
+      color: gainsboro;
+      border-style: dotted;
+  }
+  .category{
+      color: gainsboro;
+      border-style: groove;
+  }
+  .name{
+      background-color: gainsboro;
+      color: black;
+      padding-bottom: 2px;
+      width="100%";
+  }
+  .price{
+      background-color: gainsboro ;
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  .a {
+    background-color: white 
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    
+  }
+  img{
+      border: white;
+
+  }
+  .cafe{
+      font-family: 'Times New Roman', Times, serif;
+      background-image: url("images.jfif");
+      padding-top: 0px;
+      color: white;
+      
+  }
+  .b {
+    transition-duration: 0.4s;
+    align-items: center;
+  }
+  
+  .b:hover {
+    background-color: red;
+    color: white;
+    border: none
+  }
+  .a:hover{
+      background-color: chocolate;
+      color: cornsilk;
+      border: none;
+      box-shadow: 0 12px 16px 0 rgb(0, 0, 0), 0 17px 50px 0 rgb(0, 0, 0);
+  }
+  .cart-items{
+        border-style: groove;
+  }
+ .Srno{
+     width: 20%;
+     text-align: center;
+     border-style:dashed;
+     border-bottom: none;
+     border-top: none;
+ }
+ .item-name{
+    width: 20%;
+    text-align: center;
+    border-style: dashed;
+    border-bottom: none;
+    border-top: none;
+ }
+ .item-price{
+    width: 20%;
+    text-align: center;
+    border-style: dashed;
+    border-bottom: none;
+    border-top: none;
+ }
+ .items-quantity{
+    width: 20%;
+    text-align: center;
+    border-style: dashed;
+    border-bottom: none;
+    border-top: none;
+ }
+ .remove{
+    width: 20%;
+    text-align: center;
+    border-style: dashed;
+    border-bottom: none;
+    border-top: none;
+ }
+ .total{
+     color: lightblue;
+ }
+ .c{
+    background-color: white 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+ .c:hover{
+    background-color: chocolate;
+    color: cornsilk;
+    border: 2 px solid white;
+}
+.carton{
+        display: flex; 
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        width: "50%";
+        padding-left: 100px;
+        padding-right: 100px;
+      
+}
+.eh{
+    border-style: dotted;
+}
+.bg{
+    background-color: black;
+}
+.bg:hover{
+    background-image: url('bg.jfif');
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
