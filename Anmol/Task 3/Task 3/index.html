@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burakes | Gurugram</title>
+  <link type="text/css" rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Assets/sqlogo.png" type="image/icon type">
+</head>
+<body>
+  <nav id="navbar" class="">
+    <div class="nav-wrapper">
+      <!-- Navbar Logo -->
+      <div class="logo">
+        <a href="#home"><i class="fas fa-chess-knight"></i> <img src="Assets/logo.png" alt="Burakes Logo" style="width: 140px;"></a>
+      </div>
+  
+      <!-- Navbar Links -->
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#resto">Restaurant</a></li>
+        <li><a href="#party">Parties</a></li>
+        <li><a href="#order">Order Online</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!-- Menu Icon -->
+  <div class="menuIcon">
+    <span class="icon icon-bars"></span>
+    <span class="icon icon-bars overlay"></span>
+  </div>
+  
+  
+  <div class="overlay-menu">
+    <ul id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#resto">Restaurant</a></li>
+      <li><a href="#party">Parties</a></li>
+      <li><a href="#order">Order Online</a></li>
+      </ul>
+  </div>
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Assets/1.jpg" style="width:100%">
+    <div class="text">Count the Memories not the Calories</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets/2.jpg" style="width:100%">
+    <div class="text">Delivered to your Doorstep in under One Hour</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets/3.jpg" style="width:100%">
+    <div class="text">Good Food is Good Mood</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets/4.jpg" style="width:100%">
+    <div class="text">All you want is food</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <img src="Assets/5.jpg" style="width:100%">
+    <div class="text">Issa Snack !!</div>
+  </div>
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+  </div>
+
+  <div class="main" id="gradient">
+    <div class="heading">
+      <h1>Our Store</h1>
+    </div>
+    <div class="container col-60" id="container">
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/veg.png">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Veg Burger | <br> Price : ₹79</h2>
+            <p class="card-intro">A patty made of potatoes, onions, capsicum, topped with crispy lettuce, mayonnaise, packed into sesame toasted buns.</p>
+            <br>
+            <p><button onclick="addItem1(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/paneer.png">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Paneer Burger | <br> Price : ₹109</h2>
+            <p class="card-intro">Crispy and spicy paneer patty with creamy tandoori sauce and crispy lettuce topping, packed into sesame toasted buns.</p>
+            <br>
+            <p><button onclick="addItem2(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/aloo.png">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Aloo Tikki Burger | <br> Price : ₹49</h2>
+            <p class="card-intro"> A tikki delight having potato and peas patty topped with veg sauce, ketchup, tomatoes and onions with toasted buns.</p>
+            <br>
+            <p><button onclick="addItem3(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/wrap.jpg">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Paneer Wrap | <br> Price : ₹149</h2>
+            <p class="card-intro">Tender paneer patty dressed with fresh veggies and seasonings, with sauce and a dash of mustard and melted cheese.</p>
+            <br>
+            <p><button onclick="addItem4(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/cofee.jpg">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Classic Cold Coffee | <br> Price : ₹59</h2>
+            <p class="card-intro">Signature Espresso Single Shot with Ice Cream and Chilled Milk. Nostalgia in a cup. This classic is always in vogue.</p>
+            <br> 
+            <p><button onclick="addItem5(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card-item">
+          <div class="card-image">
+            <img src="Assets/choco.jpg">
+          </div>
+          <div class="card-info">
+            <h2 class="card-title">Chocolate Brownie | <br> Price : ₹129</h2>
+            <p class="card-intro">Gooey and fudgy on the inside, nutty on the outside and amazingly delicious all over! Our melt-in-mouth Chocolate Brownie.</p>
+            <br>
+            <p><button onclick="addItem6(); show()">Add to Cart</button></p>
+          </div>
+        </div>
+      </div>
+
+
+  <div class="cartContainer col-40" id="cartContainer" style="display: none;">      
+        <table class="myTable" id="myTable">
+          <tr>
+            <th style="width: 40%;">Item Name</th>
+            <th colspan="4" style="width: 40%;">Quantity
+            </th>
+            <th style="width: 20%;">Price (in ₹)</th>
+          </tr>
+        </table>
+        <div class="con">
+          <button onClick="total()"> Total Amount </button>
+          <br><br>
+           <p id="demo"></p>
+     </div>
+    </div>  
+
+
+<script src="script.js"></script>
+</body>
+</html>
