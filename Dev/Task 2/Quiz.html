@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizstyle.css">
+    <title>Document</title>
+</head>
+<style type="text/css" media="screen">
+    body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    }
+
+    * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #start {
+        text-align: center;
+        min-height: 500px;
+        font-family: Helvetica, sans-serif;
+        max-width: 700px;
+        background-color: white;
+        margin: 30px auto;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    #start h2,
+    #start h3 {
+        border-radius: 10px;
+        color: white;
+        background-color: #0499df;
+        padding: 10px;
+    }
+
+    #start button {
+        padding: 8px;
+        margin: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #0499df;
+        background: none;
+        border: 2px solid #0499df;
+        outline: none;
+        transition: 0.2s ease-out;
+        cursor: pointer;
+    }
+
+    #start button:hover {
+        transform: scale(1.1);
+        color: white;
+        background: #0499df;
+    }
+
+    .quiz-wrapper {
+        min-height: 500px;
+        max-width: 700px;
+        background-color: white;
+        margin: 30px auto;
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    .quiz-wrapper .question {
+        padding: 15px;
+        min-height: 50px;
+        background-color: #0499df;
+        border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        float: left;
+        width: 100%;
+    }
+
+    .quiz-wrapper .options {
+        width: 100%;
+        float: left;
+    }
+
+    .quiz-wrapper .options ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+
+    .quiz-wrapper .options ul li{
+        /* display: block; */
+        list-style: none;
+        word-wrap: break-word;
+        /* background: linear-gradient(-90deg, #2acc80, #16da41); */
+        background: linear-gradient(-90deg, #b4ceb9, #839e92);
+        /* background-color: grey; */
+        padding: 15px;
+        border-radius: 10px;
+        color: white;
+        min-width: calc(80% - 50px);
+        max-width: 100%;
+        margin: 10px auto 0 auto;
+        cursor: pointer;
+        transition: 0.15s ease-out;
+    }
+
+    .quiz-wrapper .options ul li:hover {
+        transform: scale(1.1);
+        /*transform: scaleY(1.05);*/
+    }
+
+    .quiz-wrapper .score {
+        float: left;
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .quiz-wrapper .score .next {
+        width: 30%;
+        float: left;
+    }
+
+    .quiz-wrapper .score .next button {
+        padding: 10px 40px;
+        background-color: white;
+        color: skyblue;
+        border: 2px solid skyblue;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        outline: none;
+    }
+
+    .quiz-wrapper .score .next button:hover,
+    .quiz-wrapper .score .next button:active {
+        color: white;
+        background-color: skyblue;
+        transition: ease-in-out 0.2s;
+    }
+
+    .quiz-wrapper .score .score-card {
+        width: 40%;
+        float: left;
+    }
+
+    .quiz-wrapper .score .score-card {
+        font-size: 20px;
+        color: black;
+        line-height: 50px;
+    }
+
+    .quiz-wrapper .options ul li .correct {
+        background: none;
+        background-color: green;
+        color: white;
+        transition: ease-in;
+    }
+
+    .quiz-wrapper .options ul li .wrong {
+        background: none;
+        background-color: red;
+        color: white;
+        transition: ease-in;
+    }
+
+    .quiz-wrapper .score .timer {
+        width:  30%;
+        float: left;
+        font-size: 20px;
+        color: black;
+        line-height: 50px;
+    }
+
+    #end-quiz {
+        min-height: 500px;
+        max-width: 700px;
+        background-color: #0499df;
+        margin: 30px auto;
+        border-radius: 10px;
+        padding: 10% 0;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+    }
+</style>
+<body>
+    <div id="start"> 
+        <h2>Quiz Rules:</h2>
+        <h3>You can only go to 'next' Questions</h3>
+        <h3>Total time per Question: 10 seconds</h3>
+        <button class="next" type="" onclick="quizStart();">
+            Start Quiz
+        </button>
+    </div>
+    <!-- QUIZ WRAPPER -->
+    <div class="quiz-wrapper" style="display: none;">
+
+        <!-- QUESTION -->
+        <div class="question" id="question-box"></div>
+
+        <!-- OPTIONS -->
+        <div class="options">
+
+            <ul>
+
+                <li id="_1" onclick="sendAnswer(this.id)"></li>
+                <li id="_2" onclick="sendAnswer(this.id)"></li>
+                <li id="_3" onclick="sendAnswer(this.id)"></li>
+                <li id="_4" onclick="sendAnswer(this.id)"></li>
+
+            </ul>
+
+        </div>
+
+        <!-- SCORE AND NEXT -->
+        <div class="score">
+            
+            <div class="next">
+                <button id="next-button" type="button" onclick="next();">Next</button>
+            </div>
+            <div class="score-card">
+                Score: <span id= "score-display">0</span>
+            </div>
+            <div class="timer">
+                Time Remaining: <span id= "timer-display"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="end-quiz" style="display: none;">
+        
+    </div>
+
+</body>
+<script>
+    var currentQ = 0;
+    var score = 0;
+    var seconds = 10;
+    var timer;
+    const qBox = document.getElementById('question-box');
+    const op1 = document.getElementById('_1');
+    const op2 = document.getElementById('_2');
+    const op3 = document.getElementById('_3');
+    const op4 = document.getElementById('_4');
+    const scoreDisplay = document.getElementById('score-display');
+
+    const questions = [{
+            q: 'HTML stands for?',
+            options: ['Option 1', 'Hyper Text Markup Language', 'Option 3', 'Option 4'],
+            answer: '1'
+        },
+        {
+            q: 'Inside which HTML element do we put the JavaScript?',
+            options: ['Option 1', 'Option 2', 'Option 3', '<script>'],
+            answer: '3'
+        },
+        {
+            q: 'How do you call a function named "myFunction"?',
+            options: ['myFunction()', 'Option 2', 'Option 3', 'Option 4'],
+            answer: '0'
+        },
+        {
+            q: 'Equivalent of $(\'\') in JavaScript?',
+            options: ['Option 1', 'Option 2', 'document.querySelector(\' \')', 'Option 4'],
+            answer: '2'
+        }
+    ]
+
+    function endQuiz() {
+        document.querySelector('.quiz-wrapper').style.display = 'none';
+        document.querySelector('#end-quiz').style.display = 'block';
+        document.querySelector('#end-quiz').textContent = 'Your Score is: ' + score;
+    }
+
+    const displayQ = () => {
+        // currentQ++;   
+        if (currentQ < questions.length) {
+            qBox.textContent = questions[currentQ].q;
+            op1.textContent = questions[currentQ].options[0];
+            op2.textContent = questions[currentQ].options[1];
+            op3.textContent = questions[currentQ].options[2];
+            op4.textContent = questions[currentQ].options[3];
+            document.querySelector('#next-button').textContent = currentQ == questions.length - 1 ? 'Finish' : 'Next';
+            document.getElementById("timer-display").innerHTML = "10";
+            if (!timer) {
+                timer = window.setInterval(function() {
+                    myFunction();
+                }, 1000);
+            }
+        }
+    }
+
+    const quizStart = () => {
+        document.querySelector('#start').style.display = 'none';
+        document.querySelector('.quiz-wrapper').style.display = 'block';
+        displayQ();
+    }
+
+    const sendAnswer = id => {
+        // console.log(id);
+        op1.setAttribute('onclick', null);
+        op2.setAttribute('onclick', null);
+        op3.setAttribute('onclick', null);
+        op4.setAttribute('onclick', null);
+        checkQ(id.split('_')[1] - 1);
+    }
+
+    const checkQ = (answer) => {
+        if (questions[currentQ].answer == answer) {
+            // answer++;
+            console.log(`_${answer+1}`);
+            document.getElementById(`_${answer+1}`).style.background = 'green';
+            score++;
+        } else {
+            console.log('wrong')
+            document.getElementById(`_${answer+1}`).style.background = 'red';
+        }
+        console.log('The score: ', score)
+        scoreDisplay.textContent = score;
+    }
+
+    const next = () => {
+        seconds = 10;
+        clearInterval(timer);
+        timer = !timer;
+        currentQ++;
+        op1.setAttribute('onclick', 'sendAnswer(this.id);');
+        op1.style.background= 'linear-gradient(-90deg, #b4ceb9, #839e92)';
+        op2.setAttribute('onclick', 'sendAnswer(this.id);');
+        op2.style.background= 'linear-gradient(-90deg, #b4ceb9, #839e92)';
+        op3.setAttribute('onclick', 'sendAnswer(this.id);');
+        op3.style.background= 'linear-gradient(-90deg, #b4ceb9, #839e92)';
+        op4.setAttribute('onclick', 'sendAnswer(this.id);');
+        op4.style.background= 'linear-gradient(-90deg, #b4ceb9, #839e92)';
+        currentQ < questions.length ? displayQ() : endQuiz();
+    }
+
+    function myFunction() {
+        if (seconds < 10) {
+            document.getElementById("timer-display").innerHTML = seconds;
+        }
+        if (seconds > 0) {
+            seconds--;
+        } else {
+            clearInterval(timer);
+            next();
+        }
+    }
+</script>
+</html>

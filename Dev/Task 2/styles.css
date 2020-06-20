@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: tan;
+}
+
+body .container {
+    padding: 16px;
+    margin: 0 25%;
+    border-radius: 10px 10px 0 0;
+    background-color: whitesmoke;
+}
+
+body p {
+    font-size: xx-large;
+    background-color: steelblue;
+    border-radius: 10px 10px 0 0 ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fields {
+    padding: 8px;
+    margin: 4px;
+    color: #df4460;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Helvetica;
+}
+
+.fields input {
+    width: 60%;
+    height: 28px;
+    outline: none;
+    border: 2px solid lightblue;
+}
+
+.register {
+    margin: 30px 25%;
+}
+
+.register button {
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0499df;
+    background: none;
+    border: 2px solid #0499df;
+    outline: none;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.register button:hover {
+    transform: scale(1.1);
+    color: white;
+    background: #0499df;
+}
